@@ -15,3 +15,16 @@ jobs:
       - uses: athul/waka-readme@master # this action name
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: false
+          BLOCKS: ▱▰
+          TIME_RANGE: all_time
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          SHOW_MASKED_TIME: true
+          LANG_COUNT: 15
+          CODE_LANG: ruby
+          SECTION_NAME: waka
+          IGNORED_LANGUAGES: YAML JSON
+          ### commit
+          AUTHOR_NAME: Dhruvan Kartik
+          AUTHOR_EMAIL: dhruvan.k05@gmail.com
