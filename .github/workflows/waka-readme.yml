@@ -22,7 +22,7 @@ jobs:
           SHOW_TOTAL: true
           SHOW_MASKED_TIME: false
           LANG_COUNT: 15
-          CODE_LANG: swift
+          CODE_LANG: ocaml
           SECTION_NAME: waka
           IGNORED_LANGUAGES: YAML JSON
           ### commit
