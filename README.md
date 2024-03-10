@@ -19,6 +19,8 @@ Here are some ideas to get you started:
 <!--START_SECTION:waka-->
 
 ```ruby
+From: 25 September 2023 - To: 09 March 2024
+
 Total Time: 302 hrs 29 mins
 
 Python            215 hrs 20 mins ▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱   67.99 %
