@@ -20,7 +20,7 @@ jobs:
           TIME_RANGE: all_time
           SHOW_TIME: true
           SHOW_TOTAL: true
-          SHOW_MASKED_TIME: true
+          SHOW_MASKED_TIME: false
           LANG_COUNT: 15
           CODE_LANG: ruby
           SECTION_NAME: waka
