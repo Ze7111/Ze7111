@@ -1,6 +1,6 @@
-### Wasssssupppppppp
+### yes
 
-- this is my profiles readme tis aint nothing that big, jus a readme ya feel me...
+- this is my profile readme tis aint nothing that big, jus a readme ykwim...
 
 <!--START_SECTION:waka-->
 
