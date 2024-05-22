@@ -5,7 +5,7 @@
 <!--START_SECTION:waka-->
 
 ```ocaml
-From: 25 September 2023 - To: 19 May 2024
+From: 25 September 2023 - To: 20 May 2024
 
 Total Time: 505 hrs 55 mins
 
