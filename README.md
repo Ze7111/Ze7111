@@ -5,13 +5,13 @@
 <!--START_SECTION:waka-->
 
 ```ocaml
-From: 25 September 2023 - To: 24 May 2024
+From: 25 September 2023 - To: 25 May 2024
 
-Total Time: 515 hrs 34 mins
+Total Time: 515 hrs 50 mins
 
-Python            270 hrs 3 mins  ▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱   49.83 %
-C++               75 hrs 1 min    ▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   13.84 %
-Java              73 hrs 19 mins  ▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   13.53 %
+Python            270 hrs 13 mins ▰▰▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱   49.83 %
+C++               75 hrs 8 mins   ▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   13.86 %
+Java              73 hrs 19 mins  ▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   13.52 %
 Rust              48 hrs 31 mins  ▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   08.95 %
 Other             26 hrs 25 mins  ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   04.87 %
 JSON              8 hrs 32 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.58 %
