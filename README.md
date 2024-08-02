@@ -108,5 +108,27 @@ I co-founded Neorain, focusing on innovative software development and education.
 
 <!--START_SECTION:waka-->
 
+```ocaml
+From: 25 September 2023 - To: 02 August 2024
+
+Total Time: 688 hrs 3 mins
+
+Python            296 hrs 34 mins ▰▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   40.48 %
+C++               167 hrs 24 mins ▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   22.85 %
+Java              73 hrs 19 mins  ▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   10.01 %
+Rust              48 hrs 40 mins  ▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   06.64 %
+Other             44 hrs 35 mins  ▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   06.09 %
+Markdown          13 hrs 39 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.86 %
+JSON              12 hrs 45 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.74 %
+Astro             10 hrs 11 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.39 %
+EBNF              7 hrs 44 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.06 %
+C                 6 hrs 35 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.90 %
+Lua               6 hrs 34 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.90 %
+Swift             4 hrs 27 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.61 %
+Singularity       4 hrs 23 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.60 %
+CSS               3 hrs 14 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.44 %
+TOML              2 hrs 55 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.40 %
+```
+
 <!--END_SECTION:waka-->
 **Times recorded with [wakatime](wakatime.com).**
