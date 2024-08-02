@@ -82,9 +82,7 @@ I co-founded Neorain, focusing on innovative software development and education.
 
 # 📊 GitHub Stats
 
-![](https://github-readme-stats.vercel.app/api?username=ze7111&theme
-
-=dark&hide_border=true&include_all_commits=true&count_private=false)
+![](https://github-readme-stats.vercel.app/api?username=ze7111&theme=dark&hide_border=true&include_all_commits=true&count_private=false)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=ze7111&theme=dark&hide_border=true)
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ze7111&theme=dark&hide_border=true&include_all_commits=true&count_private=false&layout=compact)
 
