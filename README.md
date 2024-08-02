@@ -1,18 +1,12 @@
 # 💫 About Me
 
-## 👋 Hi there, I'm Dhruvan!
+## 👋 Hi there, I'm Dhruvan.
 
 ### 🔭 Current Project
 I'm currently working on the [Helix Programming Language](https://github.com/yourusername/helix). Helix is designed to combine the best features of Python and C++, aiming for simplicity and performance.
 
-### 👯 Collaboration
-I'm looking to collaborate on innovative software projects, especially those involving new programming languages, compilers, or AI technologies.
-
 ### 🤝 Seeking Help
 I'm seeking help with the Helix programming language. Whether you are a seasoned developer or just starting out, your contributions can make a big difference. Check out our issues and see how you can get involved!
-
-### 🌱 Learning Journey
-I'm currently expanding my skillset by learning Rust and Swift.
 
 ### 💬 Ask Me About
 - Developing programming languages and compilers
