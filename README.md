@@ -107,5 +107,6 @@ I co-founded Neorain, focusing on innovative software development and education.
 ---
 
 <!--START_SECTION:waka-->
+
 <!--END_SECTION:waka-->
 **Times recorded with [wakatime](wakatime.com).**
