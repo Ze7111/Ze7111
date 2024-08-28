@@ -96,7 +96,7 @@ I co-founded Neorain, focusing on innovative software development and education.
 
 ## 💰 Support Me
 
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dhruvan_kartik)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dhruvan0)
 
 ---
 
