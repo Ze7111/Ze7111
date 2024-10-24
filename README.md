@@ -3,7 +3,7 @@
 ## 👋 Hi there, I'm Dhruvan.
 
 ### 🔭 Current Project
-I'm currently working on the [Helix Programming Language](https://github.com/yourusername/helix). Helix is designed to combine the best features of Python and C++, aiming for simplicity and performance.
+I'm currently working on the [Helix Programming Language](https://github.com/kneorain/helix-lang). Helix is designed to combine the best features of Python and C++, aiming for simplicity and performance.
 
 ### 🤝 Seeking Help
 I'm seeking help with the Helix programming language. Whether you are a seasoned developer or just starting out, your contributions can make a big difference. Check out our issues and see how you can get involved!
