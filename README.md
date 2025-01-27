@@ -103,7 +103,7 @@ I co-founded Neorain, focusing on innovative software development and education.
 <!--START_SECTION:waka-->
 
 ```ocaml
-From: 25 September 2023 - To: 24 January 2025
+From: 25 September 2023 - To: 25 January 2025
 
 Total Time: 2,960 hrs 41 mins
 
