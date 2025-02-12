@@ -3,10 +3,10 @@
 ## 👋 Hi there, I'm Dhruvan.
 
 ### 🔭 Current Project
-I'm currently working on the [Helix Programming Language](https://github.com/kneorain/helix-lang). Helix is designed to combine the best features of Python and C++, aiming for simplicity and performance.
+I'm currently working on the [Helix Compiler](https://github.com/kneorain/helix-lang). Helix is where the power and low-level granularity of C++, the safety of Rust, and the elegance of Python unite, giving you seamless control and simplicity in coding.
 
 ### 🤝 Seeking Help
-I'm seeking help with the Helix programming language. Whether you are a seasoned developer or just starting out, your contributions can make a big difference. Check out our issues and see how you can get involved!
+I'm seeking help with Helix. Whether you are a seasoned developer or just starting out, your contributions can make a big difference. Check out our issues and see how you can get involved!
 
 ### 💬 Ask Me About
 - Developing programming languages and compilers
@@ -14,7 +14,7 @@ I'm seeking help with the Helix programming language. Whether you are a seasoned
 - Rust, Swift, C++, Python, and more!
 
 ### ⚡ Fun Fact
-I co-founded Neorain, focusing on innovative software development and education.
+I co-founded Helix Organization, focusing on innovative software development and education.
 
 ---
 
