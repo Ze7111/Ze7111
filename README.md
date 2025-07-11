@@ -104,7 +104,7 @@ I co-founded Helix Organization, focusing on innovative software development and
 <!--START_SECTION:waka-->
 
 ```ocaml
-From: 25 September 2023 - To: 08 July 2025
+From: 25 September 2023 - To: 09 July 2025
 
 Total Time: 3,543 hrs 32 mins
 
