@@ -104,19 +104,19 @@ I co-founded Helix Organization, focusing on innovative software development and
 <!--START_SECTION:waka-->
 
 ```ocaml
-From: 25 September 2023 - To: 17 August 2025
+From: 25 September 2023 - To: 18 August 2025
 
-Total Time: 3,641 hrs 4 mins
+Total Time: 3,642 hrs 47 mins
 
-C++                  1,242 hrs 10 mins▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   33.56 %
-Python               756 hrs 55 mins ▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   20.45 %
-Helix                566 hrs 34 mins ▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   15.31 %
+C++                  1,243 hrs 54 mins▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   33.59 %
+Python               756 hrs 55 mins ▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   20.44 %
+Helix                566 hrs 34 mins ▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   15.30 %
 Java                 197 hrs 28 mins ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   05.33 %
 Markdown             134 hrs 19 mins ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   03.63 %
 Rust                 116 hrs 33 mins ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   03.15 %
 C                    114 hrs 10 mins ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   03.08 %
 Lua                  72 hrs 16 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.95 %
-EBNF                 69 hrs 3 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.87 %
+EBNF                 69 hrs 3 mins   ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.86 %
 Other                60 hrs 43 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.64 %
 Astro                46 hrs 54 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   01.27 %
 MDX                  31 hrs 54 mins  ▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱   00.86 %
