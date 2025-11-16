@@ -1,30 +1,30 @@
-# 💫 About Me
+# About Me
 
-## 👋 Hi there, I'm Dhruvan.
+## Hi there, I'm Dhruvan.
 
-### 🔭 Current Project
+### Current Project
 I'm currently working on the [Helix Compiler](https://github.com/kneorain/helix-lang). Helix is where the power and low-level granularity of C++, the safety of Rust, and the elegance of Python unite, giving you seamless control and simplicity in coding.
 
-### 🤝 Seeking Help
+### Seeking Help
 I'm seeking help with Helix. Whether you are a seasoned developer or just starting out, your contributions can make a big difference. Check out our issues and see how you can get involved!
 
-### 💬 Ask Me About
+### Ask Me About
 - Developing programming languages and compilers
 - AI and machine learning
-- Rust, Swift, C++, Python, and more!
+- Helix, Rust, Swift, C++, Python, and more!
 
-### ⚡ Fun Fact
+### Fun Fact
 I co-founded Helix Organization, focusing on innovative software development and education.
 
 ---
 
-## 🌐 Socials
+## Socials
 
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/.ze7) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/dhurvan_kartik) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dhruvan_kartik)
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) 
 ![Helix](https://img.shields.io/badge/Helix-lang?style=flat&logo=hexo&logoColor=ded1eb&color=6d0ac9&link=https%3A%2F%2Fwww.helix-lang.com%2F)
@@ -75,7 +75,7 @@ I co-founded Helix Organization, focusing on innovative software development and
 
 ---
 
-# 📊 GitHub Stats
+# GitHub Stats
 
 ![](https://github-readme-stats.vercel.app/api?username=ze7111&theme=dark&hide_border=true&include_all_commits=true&count_private=false)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=ze7111&theme=dark&hide_border=true)
@@ -83,19 +83,19 @@ I co-founded Helix Organization, focusing on innovative software development and
 
 ---
 
-## 🏆 GitHub Trophies
+## GitHub Trophies
 
 ![](https://github-profile-trophy.vercel.app/?username=ze7111&theme=radical&no-frame=true&no-bg=false&margin-w=4)
 
 ---
 
-### ✍️ Random Dev Quote
+### Random Dev Quote
 
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ---
 
-## 💰 Support Me
+## Support Me
 
 [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dhruvan0)
 
