@@ -232,7 +232,7 @@ def render_header(theme: str, name: str, tagline: str, strip) -> str:
         rule(sy - 28, c, x0, W - x0, cls="rule"),
         strip_svg,
     ]
-    return shell(height, "".join(body), style, f"{name} — profile header")
+    return shell(height, "".join(body), style, f"{name} - profile header")
 
 
 # --------------------------------------------------------------------------
@@ -336,7 +336,7 @@ def render_pipeline(theme: str, stages, caption: str) -> str:
 
     body = [
         ticks(8, 8, W - 8, height - 8, c),
-        label("kcc — stage 1 front end", x0, 26, c, size=10, cls="fg"),
+        label("kcc - stage 1 front end", x0, 26, c, size=10, cls="fg"),
         label("self-hosted, bootstrapped by stage 0", W - x0, 26, c,
               anchor="end", size=9.5),
         "".join(pulses), "".join(arrows), "".join(boxes), "".join(labels),
@@ -437,6 +437,208 @@ def render_waka(theme: str, d: dict, cells: int = 46) -> str:
     return shell(height, "".join(body), style, "WakaTime language breakdown")
 
 
+
+# --------------------------------------------------------------------------
+# profile: ASCII portrait terminal + telemetry panel
+# --------------------------------------------------------------------------
+
+GQL = """query($u:String!){user(login:$u){
+  followers{totalCount}
+  repositories(first:100,ownerAffiliations:[OWNER],isFork:false){
+    totalCount nodes{stargazerCount}}
+  contributionsCollection{contributionCalendar{totalContributions}}}}"""
+
+
+def fetch_github(user: str, token: str) -> dict:
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": GQL, "variables": {"u": user}}).encode(),
+        headers={"Authorization": f"bearer {token}",
+                 "Content-Type": "application/json",
+                 "User-Agent": "profile-cards"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        u = json.load(r)["data"]["user"]
+    return {
+        "followers": u["followers"]["totalCount"],
+        "repos": u["repositories"]["totalCount"],
+        "stars": sum(n["stargazerCount"] for n in u["repositories"]["nodes"]),
+        "contributions":
+            u["contributionsCollection"]["contributionCalendar"]
+            ["totalContributions"],
+    }
+
+
+def fetch_avatar(user: str, dest: pathlib.Path, size: int = 240) -> bool:
+    """github.com/<user>.png redirects to the avatar CDN. Cached to disk so
+    an offline run still renders a portrait."""
+    try:
+        req = urllib.request.Request(f"https://github.com/{user}.png?size={size}",
+                                     headers={"User-Agent": "profile-cards"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = r.read()
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(data)
+        return True
+    except Exception as e:                                # noqa: BLE001
+        print(f"warn: avatar fetch failed ({e})", file=sys.stderr)
+        return False
+
+
+RAMP = " .`:-=+*coaO#%@"
+
+
+def ascii_from_image(path: pathlib.Path, cols: int, rows: int,
+                     invert: bool) -> list[str]:
+    """Luminance -> glyph density. On a dark card a bright pixel needs the
+    denser glyph; on a light card it's the reverse, hence `invert`."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return []
+    try:
+        im = Image.open(path).convert("L").resize((cols, rows), Image.LANCZOS)
+    except Exception as e:                                # noqa: BLE001
+        print(f"warn: avatar decode failed ({e})", file=sys.stderr)
+        return []
+    px = list(im.getdata()) if not hasattr(im, "get_flattened_data") else list(im.get_flattened_data())
+    sp = sorted(px)
+    lo, hi = sp[len(sp) // 20], sp[-max(1, len(sp) // 20)]
+    span = max(1, hi - lo)
+    out = []
+    for r in range(rows):
+        line = []
+        for q in range(cols):
+            v = (px[r * cols + q] - lo) / span
+            if invert:
+                v = 1.0 - v
+            line.append(RAMP[min(len(RAMP) - 1, int(v * len(RAMP)))])
+        out.append("".join(line))
+    return out
+
+
+def _bar(x: float, y: float, w: float, frac: float, c: dict,
+         cells: int = 18) -> str:
+    cw = w / cells
+    on = max(1, round(frac * cells))
+    return "".join(
+        f'<rect x="{x + k * cw:.2f}" y="{y - 4:.1f}" width="{cw - 1.3:.2f}" '
+        f'height="8" fill="{c["accent"] if k < on else c["track"]}"/>'
+        for k in range(cells))
+
+
+def render_profile(theme: str, user: str, art: list[str], gh: dict,
+                   env: dict, projects: list[tuple[str, float, str]]) -> str:
+    c = THEMES[theme]
+    pad = 18.0
+    art_w = 260.0
+    panel_w = art_w + pad * 2
+    cols = len(art[0]) if art else 0
+    rows = len(art)
+    cell_h = (art_w / rows) if rows else 0   # keeps the art square
+    title_h, status_h = 30.0, 32.0
+    art_h = rows * cell_h
+    height = int(title_h + 10 + art_h + 10 + status_h)
+
+    # ---- left: terminal window ------------------------------------------
+    left = [
+        f'<rect x="0.5" y="0.5" width="{panel_w - 1:.1f}" '
+        f'height="{height - 1}" fill="none" stroke="{c["line"]}" '
+        f'stroke-width="1"/>',
+        f'<line x1="0" y1="{title_h}" x2="{panel_w:.1f}" y2="{title_h}" '
+        f'stroke="{c["line"]}"/>',
+    ]
+    for i, dot in enumerate(("#ff5f56", "#ffbd2e", "#27c93f")):
+        left.append(f'<circle cx="{pad + i * 15}" cy="{title_h / 2}" r="4.5" '
+                    f'fill="{dot}"/>')
+    left.append(label(f"{user}@github: ./portrait", panel_w / 2 + 18,
+                      title_h / 2, c, anchor="middle", size=8.5))
+
+    art_top = title_h + 10
+    for r, line in enumerate(art):
+        y = art_top + r * cell_h + cell_h * 0.72
+        row = (f'<text xml:space="preserve" x="{pad}" y="{y:.2f}" '
+               f'font-size="{cell_h:.2f}" fill="{c["fg"]}" '
+               f'textLength="{art_w}" lengthAdjust="spacing" '
+               f'opacity="{0.72 + 0.28 * (r / max(1, rows)):.2f}">'
+               f'{esc(line)}</text>')
+        left.append(
+            f'<clipPath id="pr{r}"><rect class="scan" '
+            f'style="animation-delay:{r * 0.055:.3f}s" x="{pad}" '
+            f'y="{art_top + r * cell_h:.2f}" width="{art_w}" '
+            f'height="{cell_h + 1:.2f}"/></clipPath>'
+            f'<g clip-path="url(#pr{r})">{row}</g>')
+
+    sy = height - status_h
+    left.append(f'<line x1="0" y1="{sy}" x2="{panel_w:.1f}" y2="{sy}" '
+                f'stroke="{c["line"]}"/>')
+    left.append(txt(f"$ whoami", pad, sy + status_h / 2, 11.0, "fa"))
+    left.append(txt(user, pad + 74, sy + status_h / 2, 11.0, "ac"))
+    left.append(f'<rect id="blink" x="{pad + 74 + len(user) * 6.6:.1f}" '
+                f'y="{sy + status_h / 2 - 6:.1f}" width="6" height="12" '
+                f'fill="{c["accent"]}"/>')
+
+    # ---- right: telemetry -----------------------------------------------
+    rx = panel_w + 26
+    rw = W - rx - 22
+    right, y = [], 20.0
+
+    def section(name: str, extra: str = "") -> None:
+        nonlocal y
+        right.append(label(name, rx, y, c, size=9.5, cls="fg"))
+        if extra:
+            right.append(label(extra, rx + rw, y, c, anchor="end", size=9))
+        right.append(rule(y + 12, c, rx, rx + rw))
+        y += 30
+
+    def row(k: str, v: str, tone: str = "fg") -> None:
+        nonlocal y
+        right.append(label(k, rx, y, c, size=9, cls="mu"))
+        right.append(txt(v, rx + rw, y, 12.0, tone, anchor="end"))
+        vx = rx + rw - len(v) * 7.2 - 10
+        kx = rx + len(k) * 6.6 + 12
+        if kx < vx:
+            right.append(f'<line x1="{kx:.0f}" y1="{y}" x2="{vx:.0f}" '
+                         f'y2="{y}" stroke="{c["faint"]}" stroke-width="1" '
+                         f'stroke-dasharray="1 4" opacity=".6"/>')
+        y += 22
+
+    section("github", f"@{user}")
+    row("repositories", str(gh.get("repos", "—")))
+    row("stars earned", str(gh.get("stars", "—")), "ac")
+    row("followers", str(gh.get("followers", "—")))
+    row("contributions · 12mo", f'{gh.get("contributions", "—"):,}'
+        if isinstance(gh.get("contributions"), int) else "—", "ac")
+    y += 8
+    section("environment", env.get("range", ""))
+    row("editor", env.get("editor", "—"))
+    row("os", env.get("os", "—"))
+    row("daily average", env.get("daily", "—"))
+    y += 10
+    right.append(label("time by project", rx, y, c, size=9.5, cls="fg"))
+    right.append(rule(y + 12, c, rx, rx + rw))
+    y += 30
+    bar_x = rx + 132
+    bar_w = rw - 132 - 56
+    for name, frac, pct in projects[:4]:
+        right.append(txt(name[:16], rx, y, 11.5, "fg"))
+        right.append(_bar(bar_x, y, bar_w, frac, c))
+        right.append(txt(pct, rx + rw, y, 11.0, "mu", anchor="end"))
+        y += 21
+
+    height = max(height, int(y + 14))
+
+    style = BASE.format(**c) + """
+.scan{transform-box:fill-box;transform-origin:left center;
+  animation:scan .35s ease-out both}
+@keyframes scan{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+#blink{animation:blink 1.05s steps(1,end) infinite}
+@keyframes blink{50%{opacity:0}}
+""" + REDUCED.replace(".px,.cell,.row,", ".px,.cell,.row,.scan,")
+
+    body = ticks(8, 8, W - 8, height - 8, c) + "".join(left) + "".join(right)
+    return shell(height, body, style, f"{user} - profile telemetry")
+
+
 # --------------------------------------------------------------------------
 
 STRIP = [
@@ -447,7 +649,7 @@ STRIP = [
 ]
 
 DECK = [
-    ("compilers", "kairo — statically typed systems language, self-hosted",
+    ("compilers", "kairo - statically typed systems language, self-hosted",
      "active", "live"),
     ("upstream", "clang: lexer patch for prebuilt token injection",
      "merged", "done"),
@@ -455,7 +657,7 @@ DECK = [
      "team lead", "live"),
     ("ml infra", "dual-gpu local inference · llama.cpp · quantised models",
      "running", "done"),
-    ("ai tooling", "kai — shell interceptor, local model command synthesis",
+    ("ai tooling", "kai - shell interceptor, local model command synthesis",
      "alpha", "wip"),
     ("web", "receipt-splitting pwa · next.js / neon / r2 / vision ocr",
      "beta", "wip"),
@@ -474,6 +676,12 @@ def main() -> int:
     ap.add_argument("--top", type=int, default=8)
     ap.add_argument("--ignore", default=os.environ.get("WAKA_IGNORE",
                                                        "yaml,json"))
+    ap.add_argument("--user", default=os.environ.get("GH_USER", "ze7111"))
+    ap.add_argument("--portrait-invert", choices=("auto", "yes", "no"),
+                    default="auto",
+                    help="ink density follows darkness (auto: on light cards "
+                         "only). Flip it if your avatar has a dark background "
+                         "and the light card fills with ink.")
     ap.add_argument("--offline", action="store_true")
     args = ap.parse_args()
 
@@ -500,7 +708,49 @@ def main() -> int:
     ignore = {x.strip().casefold() for x in args.ignore.split(",") if x.strip()}
     d = normalise(data, args.top, ignore)
 
+    # --- github counters: live if a token is present, else last good pull ---
+    ghc = pathlib.Path(args.cache).with_name("github.json")
+    gh = {}
+    tok = os.environ.get("GITHUB_TOKEN", "")
+    if tok and not args.offline:
+        try:
+            gh = fetch_github(args.user, tok)
+            ghc.write_text(json.dumps(gh, indent=1))
+        except Exception as e:                            # noqa: BLE001
+            print(f"warn: github fetch failed ({e}); using cache",
+                  file=sys.stderr)
+    if not gh and ghc.exists():
+        gh = json.loads(ghc.read_text())
+
+    # --- avatar -> ascii ---------------------------------------------------
+    av = pathlib.Path(args.cache).with_name("avatar.png")
+    if not args.offline:
+        fetch_avatar(args.user, av)
+
+    def top_of(key: str) -> str:
+        xs = data.get(key) or []
+        return xs[0]["name"] if xs else "—"
+
+    env = {
+        "editor": top_of("editors").lower(),
+        "os": top_of("operating_systems").lower(),
+        "daily": data.get("human_readable_daily_average") or "—",
+        "range": d["range"] or "",
+    }
+    projs = data.get("projects") or []
+    ptot = sum(p["total_seconds"] for p in projs) or 1.0
+    pmax = max((p["total_seconds"] for p in projs), default=1.0) or 1.0
+    projects = [(p["name"], p["total_seconds"] / pmax,
+                 f'{p["total_seconds"] / ptot * 100:.1f}%')
+                for p in sorted(projs, key=lambda p: -p["total_seconds"])[:4]]
+
     for theme in ("dark", "light"):
+        inv = {"auto": theme == "light", "yes": True,
+               "no": False}[args.portrait_invert]
+        art = ascii_from_image(av, 40, 24, invert=inv)
+        if art:
+            (out / f"profile-{theme}.svg").write_text(render_profile(
+                theme, args.user, art, gh, env, projects))
         (out / f"header-{theme}.svg").write_text(render_header(
             theme, "dhruvan",
             "compilers, graphics, ml infrastructure, and the tools around them",
@@ -512,7 +762,7 @@ def main() -> int:
             theme, STAGES,
             "stage 1 compiles its own source through stage 0"))
 
-    print(f"wrote 8 cards to {out}/ ({len(d['langs'])} language rows)")
+    print(f"wrote {len(list(out.glob('*.svg')))} cards to {out}/")
     return 0
 
 

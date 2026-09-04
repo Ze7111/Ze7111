@@ -28,17 +28,20 @@ jobs:
 
       # data/waka.json is committed, so a WakaTime outage degrades to the
       # last good pull instead of blanking the card.
+      - run: pip install --quiet pillow
+
       - name: Generate cards
         env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WAKA_RANGE: all_time
-        run: python3 scripts/gen_cards.py --out assets --cache data/waka.json --top 8 --ignore yaml,json
+        run: python3 scripts/gen_cards.py --out assets --cache data/waka.json --top 8 --ignore yaml,json --user ze7111
 
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets data/waka.json
+          git add assets data
           git diff --cached --quiet && { echo "no change"; exit 0; }
           git commit -m "cards: refresh [skip ci]"
           git push
