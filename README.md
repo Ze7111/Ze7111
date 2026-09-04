@@ -4,6 +4,17 @@
   <img alt="Dhruvan Kartik" src="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/header-light.svg" width="100%">
 </picture>
 
+---
+
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-light.svg">
+  <img alt="Profile telemetry" src="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-light.svg" width="100%">
+</picture>
+
+---
+
 I work low in the stack and build the tooling around it. Compilers and language runtimes are the deep end, but most of what I ship is somewhere between the metal and the interface — real-time graphics, local inference infrastructure, developer tooling, and the web layer when it needs to exist.
 
 <picture>
@@ -24,10 +35,6 @@ Talk to me about compiler architecture, LLVM and Clang internals, GPU inference 
   <img alt="WakaTime language breakdown" src="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/waka-light.svg" width="100%">
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-light.svg">
-  <img alt="Profile telemetry" src="https://raw.githubusercontent.com/ze7111/ze7111/main/assets/profile-light.svg" width="100%">
-</picture>
+---
 
 <sub>Cards generated nightly by <a href="scripts/gen_cards.py"><code>scripts/gen_cards.py</code></a> from the WakaTime API · <a href=".github/workflows/cards.yml"><code>cards.yml</code></a></sub>
