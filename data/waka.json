@@ -1,0 +1,122 @@
+{
+ "languages": [
+  {
+   "name": "Kairo",
+   "total_seconds": 6257580,
+   "percent": 33.0,
+   "text": "1738 hrs 13 mins",
+   "hours": 1738,
+   "minutes": 13
+  },
+  {
+   "name": "C++",
+   "total_seconds": 5179020,
+   "percent": 27.32,
+   "text": "1438 hrs 37 mins",
+   "hours": 1438,
+   "minutes": 37
+  },
+  {
+   "name": "Python",
+   "total_seconds": 3074100,
+   "percent": 16.21,
+   "text": "853 hrs 55 mins",
+   "hours": 853,
+   "minutes": 55
+  },
+  {
+   "name": "Markdown",
+   "total_seconds": 801840,
+   "percent": 4.23,
+   "text": "222 hrs 44 mins",
+   "hours": 222,
+   "minutes": 44
+  },
+  {
+   "name": "Java",
+   "total_seconds": 719340,
+   "percent": 3.79,
+   "text": "199 hrs 49 mins",
+   "hours": 199,
+   "minutes": 49
+  },
+  {
+   "name": "Other",
+   "total_seconds": 504420,
+   "percent": 2.66,
+   "text": "140 hrs 7 mins",
+   "hours": 140,
+   "minutes": 7
+  },
+  {
+   "name": "C",
+   "total_seconds": 452820,
+   "percent": 2.39,
+   "text": "125 hrs 47 mins",
+   "hours": 125,
+   "minutes": 47
+  },
+  {
+   "name": "Rust",
+   "total_seconds": 429360,
+   "percent": 2.26,
+   "text": "119 hrs 16 mins",
+   "hours": 119,
+   "minutes": 16
+  },
+  {
+   "name": "MDX",
+   "total_seconds": 427920,
+   "percent": 2.26,
+   "text": "118 hrs 52 mins",
+   "hours": 118,
+   "minutes": 52
+  },
+  {
+   "name": "Lua",
+   "total_seconds": 306300,
+   "percent": 1.62,
+   "text": "85 hrs 5 mins",
+   "hours": 85,
+   "minutes": 5
+  },
+  {
+   "name": "EBNF",
+   "total_seconds": 266280,
+   "percent": 1.4,
+   "text": "73 hrs 58 mins",
+   "hours": 73,
+   "minutes": 58
+  },
+  {
+   "name": "Astro",
+   "total_seconds": 231900,
+   "percent": 1.22,
+   "text": "64 hrs 25 mins",
+   "hours": 64,
+   "minutes": 25
+  },
+  {
+   "name": "Text",
+   "total_seconds": 178320,
+   "percent": 0.94,
+   "text": "49 hrs 32 mins",
+   "hours": 49,
+   "minutes": 32
+  },
+  {
+   "name": "Bash",
+   "total_seconds": 130380,
+   "percent": 0.69,
+   "text": "36 hrs 13 mins",
+   "hours": 36,
+   "minutes": 13
+  }
+ ],
+ "total_seconds": 18959580,
+ "human_readable_total": "5,266 hrs 33 mins",
+ "start": "2023-09-25T00:00:00Z",
+ "end": "2026-09-02T23:59:59Z",
+ "range": "all_time",
+ "is_up_to_date": true
+}
