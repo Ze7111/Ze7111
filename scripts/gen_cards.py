@@ -243,7 +243,7 @@ def render_header(theme: str, name: str, tagline: str, strip) -> str:
         rule(sy - 28, c, x0, W - x0, cls="rule"),
         strip_svg,
     ]
-    return shell(height, "".join(body), style, f"{name} — profile header")
+    return shell(height, "".join(body), style, f"{name} - profile header")
 
 
 # --------------------------------------------------------------------------
@@ -347,7 +347,7 @@ def render_pipeline(theme: str, stages, caption: str) -> str:
 
     body = [
         ticks(8, 8, W - 8, height - 8, c),
-        label("kcc — stage 1 front end", x0, 26, c, size=10, cls="fg"),
+        label("kcc - stage 1 front end", x0, 26, c, size=10, cls="fg"),
         label("self-hosted, bootstrapped by stage 0", W - x0, 26, c,
               anchor="end", size=9.5),
         "".join(pulses), "".join(arrows), "".join(boxes), "".join(labels),
@@ -500,7 +500,7 @@ def mosaic_from_image(path: pathlib.Path, cells: int,
     """Downsample the avatar to a cells x cells grid of hex colours.
 
     Quantised so that render_profile can run-length encode each row into a
-    handful of wide rects instead of one rect per cell — a 44x44 grid is
+    handful of wide rects instead of one rect per cell - a 44x44 grid is
     1,936 cells, and emitting them individually roughly triples the file."""
     try:
         from PIL import Image
@@ -659,7 +659,7 @@ def render_profile(theme: str, user: str, art: list[str], gh: dict,
 """ + REDUCED.replace(".px,.cell,.row,", ".px,.cell,.row,.scan,")
 
     body = ticks(8, 8, W - 8, height - 8, c) + "".join(left) + "".join(right)
-    return shell(height, body, style, f"{user} — profile telemetry")
+    return shell(height, body, style, f"{user} - profile telemetry")
 
 
 # --------------------------------------------------------------------------
@@ -672,7 +672,7 @@ STRIP = [
 ]
 
 DECK = [
-    ("compilers", "kairo — statically typed systems language, self-hosted",
+    ("compilers", "kairo - statically typed systems language, self-hosted",
      "active", "live"),
     ("upstream", "clang: lexer patch for prebuilt token injection",
      "merged", "done"),
@@ -680,7 +680,7 @@ DECK = [
      "team lead", "live"),
     ("ml infra", "dual-gpu local inference · llama.cpp · quantised models",
      "running", "done"),
-    ("ai tooling", "kai — shell interceptor, local model command synthesis",
+    ("ai tooling", "kai - shell interceptor, local model command synthesis",
      "alpha", "wip"),
     ("web", "receipt-splitting pwa · next.js / neon / r2 / vision ocr",
      "beta", "wip"),
@@ -749,7 +749,7 @@ def main() -> int:
     # --- avatar -> ascii ---------------------------------------------------
     # Source of truth is the real GitHub avatar. If it can't be fetched and
     # nothing is cached, the portrait card is skipped rather than rendered
-    # from a placeholder — a stand-in face is worse than no card.
+    # from a placeholder - a stand-in face is worse than no card.
     if args.avatar:
         av = pathlib.Path(args.avatar)
         if not av.exists():
