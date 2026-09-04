@@ -39,17 +39,20 @@ import urllib.request
 WAKA_API = "https://wakatime.com/api/v1/users/current/stats/{range}"
 
 THEMES = {
+    # Amber-phosphor CRT. accent -> accent2 -> accent3 is a three-stop ramp;
+    # every bar, cell and pixel samples it by position, so the gradient is
+    # the palette rather than an effect layered on top.
     "dark": {
-        "fg": "#e6edf3", "muted": "#8b949e", "faint": "#484f58",
-        "line": "#30363d", "track": "#1c2128",
-        "accent": "#b8ff2f", "accent2": "#7ee787",
-        "ok": "#3fb950", "warn": "#d29922",
+        "fg": "#e8e3d9", "muted": "#9a8f7d", "faint": "#5b5348",
+        "line": "#3a332b", "track": "#241f19",
+        "accent": "#ffb000", "accent2": "#ff6b35", "accent3": "#ff3864",
+        "ok": "#ffb000", "warn": "#ff6b35",
     },
     "light": {
-        "fg": "#1f2328", "muted": "#59636e", "faint": "#818b98",
-        "line": "#d1d9e0", "track": "#eaeef2",
-        "accent": "#4d7c0f", "accent2": "#3f6212",
-        "ok": "#1a7f37", "warn": "#9a6700",
+        "fg": "#241f19", "muted": "#6b6155", "faint": "#8f8578",
+        "line": "#ddd4c6", "track": "#f0e9dd",
+        "accent": "#b45309", "accent2": "#c2410c", "accent3": "#9f1239",
+        "ok": "#b45309", "warn": "#c2410c",
     },
 }
 
@@ -89,6 +92,13 @@ def mix(a: str, b: str, t: float) -> str:
     ca = [int(a[i:i + 2], 16) for i in (1, 3, 5)]
     cb = [int(b[i:i + 2], 16) for i in (1, 3, 5)]
     return "#" + "".join(f"{round(x + (y - x) * t):02x}" for x, y in zip(ca, cb))
+
+
+def ramp(c: dict, t: float) -> str:
+    """Sample the three-stop phosphor ramp at 0..1."""
+    t = max(0.0, min(1.0, t))
+    return (mix(c["accent"], c["accent2"], t * 2) if t < 0.5
+            else mix(c["accent2"], c["accent3"], (t - 0.5) * 2))
 
 
 def esc(s: str) -> str:
@@ -141,7 +151,8 @@ def shell(height: int, body: str, style: str, title: str) -> str:
 BASE = """
 text{{dominant-baseline:middle;white-space:pre}}
 .fg{{fill:{fg}}} .mu{{fill:{muted}}} .fa{{fill:{faint}}}
-.ac{{fill:{accent}}} .ok{{fill:{ok}}} .wn{{fill:{warn}}}
+.ac{{fill:{accent}}} .a2{{fill:{accent2}}} .a3{{fill:{accent3}}}
+.ok{{fill:{ok}}} .wn{{fill:{warn}}}
 """
 
 REDUCED = """
@@ -169,7 +180,7 @@ def render_header(theme: str, name: str, tagline: str, strip) -> str:
     pix = "".join(
         f'<rect x="{x0 + q * px:.1f}" y="{y0 + r * px:.1f}" '
         f'width="{px - gap:.1f}" height="{px - gap:.1f}" '
-        f'fill="{mix(c["accent"], c["accent2"], q / (cols - 1) * 0.75 + r / 14)}" '
+        f'fill="{ramp(c, q / (cols - 1) * 0.85 + r / 22)}" '
         f'class="px" style="animation-delay:{q * 0.014 + r * 0.009:.3f}s"/>'
         for r, row in enumerate(rows) for q, ch in enumerate(row) if ch == "#"
     )
@@ -232,7 +243,7 @@ def render_header(theme: str, name: str, tagline: str, strip) -> str:
         rule(sy - 28, c, x0, W - x0, cls="rule"),
         strip_svg,
     ]
-    return shell(height, "".join(body), style, f"{name} - profile header")
+    return shell(height, "".join(body), style, f"{name} — profile header")
 
 
 # --------------------------------------------------------------------------
@@ -336,7 +347,7 @@ def render_pipeline(theme: str, stages, caption: str) -> str:
 
     body = [
         ticks(8, 8, W - 8, height - 8, c),
-        label("kcc - stage 1 front end", x0, 26, c, size=10, cls="fg"),
+        label("kcc — stage 1 front end", x0, 26, c, size=10, cls="fg"),
         label("self-hosted, bootstrapped by stage 0", W - x0, 26, c,
               anchor="end", size=9.5),
         "".join(pulses), "".join(arrows), "".join(boxes), "".join(labels),
@@ -408,7 +419,7 @@ def render_waka(theme: str, d: dict, cells: int = 46) -> str:
             f'<rect class="cell" style="animation-delay:'
             f'{i * 0.05 + k * 0.006:.3f}s" x="{bar_x + k * cw:.2f}" '
             f'y="{y - 5:.1f}" width="{cw - 1.4:.2f}" height="10" '
-            f'fill="{c["accent"] if k < filled else c["track"]}"/>'
+            f'fill="{ramp(c, k / (cells - 1)) if k < filled else c["track"]}"/>'
             for k in range(cells))
         rows.append(txt(l["name"][:17], x0, y, 12.5, "fg") + seq
                     + txt(l["text"], time_x, y, 11.5, "mu")
@@ -484,36 +495,35 @@ def fetch_avatar(user: str, dest: pathlib.Path, size: int = 240) -> bool:
         return False
 
 
-RAMP = " .`:-=+*coaO#%@"
+def mosaic_from_image(path: pathlib.Path, cells: int,
+                      colors: int = 28) -> list[list[str]]:
+    """Downsample the avatar to a cells x cells grid of hex colours.
 
-
-def ascii_from_image(path: pathlib.Path, cols: int, rows: int,
-                     invert: bool) -> list[str]:
-    """Luminance -> glyph density. On a dark card a bright pixel needs the
-    denser glyph; on a light card it's the reverse, hence `invert`."""
+    Quantised so that render_profile can run-length encode each row into a
+    handful of wide rects instead of one rect per cell — a 44x44 grid is
+    1,936 cells, and emitting them individually roughly triples the file."""
     try:
         from PIL import Image
     except ImportError:
+        print("warn: pillow not installed; skipping the portrait",
+              file=sys.stderr)
         return []
     try:
-        im = Image.open(path).convert("L").resize((cols, rows), Image.LANCZOS)
+        im = Image.open(path).convert("RGB")
+    except FileNotFoundError:
+        return []
     except Exception as e:                                # noqa: BLE001
         print(f"warn: avatar decode failed ({e})", file=sys.stderr)
         return []
-    px = list(im.getdata()) if not hasattr(im, "get_flattened_data") else list(im.get_flattened_data())
-    sp = sorted(px)
-    lo, hi = sp[len(sp) // 20], sp[-max(1, len(sp) // 20)]
-    span = max(1, hi - lo)
-    out = []
-    for r in range(rows):
-        line = []
-        for q in range(cols):
-            v = (px[r * cols + q] - lo) / span
-            if invert:
-                v = 1.0 - v
-            line.append(RAMP[min(len(RAMP) - 1, int(v * len(RAMP)))])
-        out.append("".join(line))
-    return out
+    w, h = im.size
+    side = min(w, h)                       # centre-crop to square first
+    im = im.crop(((w - side) // 2, (h - side) // 2,
+                  (w + side) // 2, (h + side) // 2))
+    im = im.resize((cells, cells), Image.LANCZOS)
+    im = im.quantize(colors=colors, method=Image.MEDIANCUT).convert("RGB")
+    px = list(im.getdata())
+    return [["#%02x%02x%02x" % px[r * cells + q] for q in range(cells)]
+            for r in range(cells)]
 
 
 def _bar(x: float, y: float, w: float, frac: float, c: dict,
@@ -522,7 +532,7 @@ def _bar(x: float, y: float, w: float, frac: float, c: dict,
     on = max(1, round(frac * cells))
     return "".join(
         f'<rect x="{x + k * cw:.2f}" y="{y - 4:.1f}" width="{cw - 1.3:.2f}" '
-        f'height="8" fill="{c["accent"] if k < on else c["track"]}"/>'
+        f'height="8" fill="{ramp(c, k / (cells - 1)) if k < on else c["track"]}"/>'
         for k in range(cells))
 
 
@@ -532,11 +542,10 @@ def render_profile(theme: str, user: str, art: list[str], gh: dict,
     pad = 18.0
     art_w = 260.0
     panel_w = art_w + pad * 2
-    cols = len(art[0]) if art else 0
-    rows = len(art)
-    cell_h = (art_w / rows) if rows else 0   # keeps the art square
+    cells = len(art)
+    cell = art_w / cells if cells else 0
     title_h, status_h = 30.0, 32.0
-    art_h = rows * cell_h
+    art_h = art_w
     height = int(title_h + 10 + art_h + 10 + status_h)
 
     # ---- left: terminal window ------------------------------------------
@@ -554,19 +563,33 @@ def render_profile(theme: str, user: str, art: list[str], gh: dict,
                       title_h / 2, c, anchor="middle", size=8.5))
 
     art_top = title_h + 10
-    for r, line in enumerate(art):
-        y = art_top + r * cell_h + cell_h * 0.72
-        row = (f'<text xml:space="preserve" x="{pad}" y="{y:.2f}" '
-               f'font-size="{cell_h:.2f}" fill="{c["fg"]}" '
-               f'textLength="{art_w}" lengthAdjust="spacing" '
-               f'opacity="{0.72 + 0.28 * (r / max(1, rows)):.2f}">'
-               f'{esc(line)}</text>')
+    for r, row_colors in enumerate(art):
+        y = art_top + r * cell
+        runs, q = [], 0
+        while q < cells:                    # run-length encode the row
+            k = q
+            while k + 1 < cells and row_colors[k + 1] == row_colors[q]:
+                k += 1
+            runs.append((q, k - q + 1, row_colors[q]))
+            q = k + 1
+        band = "".join(
+            f'<rect x="{pad + q0 * cell:.2f}" y="{y:.2f}" '
+            f'width="{n * cell + 0.4:.2f}" height="{cell + 0.4:.2f}" '
+            f'fill="{col}"/>' for q0, n, col in runs)
         left.append(
             f'<clipPath id="pr{r}"><rect class="scan" '
-            f'style="animation-delay:{r * 0.055:.3f}s" x="{pad}" '
-            f'y="{art_top + r * cell_h:.2f}" width="{art_w}" '
-            f'height="{cell_h + 1:.2f}"/></clipPath>'
-            f'<g clip-path="url(#pr{r})">{row}</g>')
+            f'style="animation-delay:{r * 0.022:.3f}s" x="{pad}" '
+            f'y="{y:.2f}" width="{art_w}" height="{cell + 0.6:.2f}"/>'
+            f'</clipPath><g clip-path="url(#pr{r})">{band}</g>')
+    # hairline grid: turns a smooth downsample into visible dense cells
+    grid = "".join(
+        f'<line x1="{pad + i * cell:.2f}" y1="{art_top}" '
+        f'x2="{pad + i * cell:.2f}" y2="{art_top + art_w:.2f}"/>'
+        f'<line x1="{pad}" y1="{art_top + i * cell:.2f}" '
+        f'x2="{pad + art_w}" y2="{art_top + i * cell:.2f}"/>'
+        for i in range(1, cells))
+    left.append(f'<g stroke="{c["line"]}" stroke-width=".5" opacity=".35">'
+                f'{grid}</g>')
 
     sy = height - status_h
     left.append(f'<line x1="0" y1="{sy}" x2="{panel_w:.1f}" y2="{sy}" '
@@ -636,7 +659,7 @@ def render_profile(theme: str, user: str, art: list[str], gh: dict,
 """ + REDUCED.replace(".px,.cell,.row,", ".px,.cell,.row,.scan,")
 
     body = ticks(8, 8, W - 8, height - 8, c) + "".join(left) + "".join(right)
-    return shell(height, body, style, f"{user} - profile telemetry")
+    return shell(height, body, style, f"{user} — profile telemetry")
 
 
 # --------------------------------------------------------------------------
@@ -649,7 +672,7 @@ STRIP = [
 ]
 
 DECK = [
-    ("compilers", "kairo - statically typed systems language, self-hosted",
+    ("compilers", "kairo — statically typed systems language, self-hosted",
      "active", "live"),
     ("upstream", "clang: lexer patch for prebuilt token injection",
      "merged", "done"),
@@ -657,7 +680,7 @@ DECK = [
      "team lead", "live"),
     ("ml infra", "dual-gpu local inference · llama.cpp · quantised models",
      "running", "done"),
-    ("ai tooling", "kai - shell interceptor, local model command synthesis",
+    ("ai tooling", "kai — shell interceptor, local model command synthesis",
      "alpha", "wip"),
     ("web", "receipt-splitting pwa · next.js / neon / r2 / vision ocr",
      "beta", "wip"),
@@ -677,11 +700,12 @@ def main() -> int:
     ap.add_argument("--ignore", default=os.environ.get("WAKA_IGNORE",
                                                        "yaml,json"))
     ap.add_argument("--user", default=os.environ.get("GH_USER", "ze7111"))
-    ap.add_argument("--portrait-invert", choices=("auto", "yes", "no"),
-                    default="auto",
-                    help="ink density follows darkness (auto: on light cards "
-                         "only). Flip it if your avatar has a dark background "
-                         "and the light card fills with ink.")
+    ap.add_argument("--avatar", default="",
+                    help="path to an image to use for the portrait. "
+                         "Default: fetch github.com/<user>.png")
+    ap.add_argument("--portrait-cells", type=int, default=44,
+                    help="portrait grid resolution (higher = finer mosaic, "
+                         "larger file)")
     ap.add_argument("--offline", action="store_true")
     args = ap.parse_args()
 
@@ -723,9 +747,21 @@ def main() -> int:
         gh = json.loads(ghc.read_text())
 
     # --- avatar -> ascii ---------------------------------------------------
-    av = pathlib.Path(args.cache).with_name("avatar.png")
-    if not args.offline:
-        fetch_avatar(args.user, av)
+    # Source of truth is the real GitHub avatar. If it can't be fetched and
+    # nothing is cached, the portrait card is skipped rather than rendered
+    # from a placeholder — a stand-in face is worse than no card.
+    if args.avatar:
+        av = pathlib.Path(args.avatar)
+        if not av.exists():
+            print(f"error: --avatar {av} not found", file=sys.stderr)
+            return 1
+    else:
+        av = pathlib.Path(args.cache).with_name("avatar.png")
+        if not args.offline:
+            fetch_avatar(args.user, av)
+        if not av.exists():
+            print("warn: no avatar available; skipping the portrait card",
+                  file=sys.stderr)
 
     def top_of(key: str) -> str:
         xs = data.get(key) or []
@@ -745,9 +781,7 @@ def main() -> int:
                 for p in sorted(projs, key=lambda p: -p["total_seconds"])[:4]]
 
     for theme in ("dark", "light"):
-        inv = {"auto": theme == "light", "yes": True,
-               "no": False}[args.portrait_invert]
-        art = ascii_from_image(av, 40, 24, invert=inv)
+        art = mosaic_from_image(av, args.portrait_cells)
         if art:
             (out / f"profile-{theme}.svg").write_text(render_profile(
                 theme, args.user, art, gh, env, projects))
