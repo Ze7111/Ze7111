@@ -3,14 +3,14 @@
  "user_id": "a516ca68-15d5-4ba6-951a-b6fd45c87e8e",
  "range": "all_time",
  "start": "2023-09-25T04:00:00Z",
- "end": "2026-10-20T03:59:59Z",
+ "end": "2026-10-21T03:59:59Z",
  "timeout": 235,
  "writes_only": false,
  "timezone": "America/New_York",
  "ai_additions": 95620,
  "ai_deletions": 32725,
- "human_additions": 8886189,
- "human_deletions": 6786201,
+ "human_additions": 8886302,
+ "human_deletions": 6786314,
  "ai_model_line_changes": {
   "Vscode": 4218,
   "Claude": 7578,
@@ -45,13 +45,13 @@
  "holidays": 190,
  "status": "pending_update",
  "created_at": "2026-07-24T02:34:51Z",
- "modified_at": "2026-10-20T04:38:59Z",
+ "modified_at": "2026-10-21T04:23:53Z",
  "machines": [
   {
    "total_seconds": 6159911.110485,
    "name": "Dhruvan-new-pc",
    "machine_name_id": "018cb41a-b4a9-46c8-9e96-db198b2664e5",
-   "percent": 28.55,
+   "percent": 28.54,
    "digital": "1711:05",
    "decimal": "1711.08",
    "text": "1,711 hrs 5 mins",
@@ -62,7 +62,7 @@
    "total_seconds": 3975820.036474,
    "name": "gofy-ahh-chromebook.local",
    "machine_name_id": "018afc95-3978-4d18-8d76-5848c7c8695b",
-   "percent": 18.43,
+   "percent": 18.42,
    "digital": "1104:23",
    "decimal": "1104.38",
    "text": "1,104 hrs 23 mins",
@@ -73,7 +73,7 @@
    "total_seconds": 3134123.997574,
    "name": "archlinux",
    "machine_name_id": "6351752d-57ac-462c-9042-13e2d55a1a3d",
-   "percent": 14.53,
+   "percent": 14.52,
    "digital": "870:35",
    "decimal": "870.58",
    "text": "870 hrs 35 mins",
@@ -92,21 +92,21 @@
    "minutes": 54
   },
   {
-   "total_seconds": 1851115.816,
+   "total_seconds": 1852563.182,
    "name": "dhruvans-MacBook-Pro.local",
    "machine_name_id": "db62cd50-f7c1-48b2-9810-3c6a7ffee546",
    "percent": 8.58,
-   "digital": "514:11",
-   "decimal": "514.18",
-   "text": "514 hrs 11 mins",
+   "digital": "514:36",
+   "decimal": "514.60",
+   "text": "514 hrs 36 mins",
    "hours": 514,
-   "minutes": 11
+   "minutes": 36
   },
   {
    "total_seconds": 1090760.717294,
    "name": "gofyahhromebook.notrust.clients.wireless.pfw.edu",
    "machine_name_id": "e645a163-4564-4941-9bec-901ddad811ed",
-   "percent": 5.06,
+   "percent": 5.05,
    "digital": "302:59",
    "decimal": "302.98",
    "text": "302 hrs 59 mins",
@@ -444,6 +444,17 @@
    "minutes": 29
   },
   {
+   "total_seconds": 4815.938,
+   "name": "hnt-6538.apng.wlan.private.upenn.edu",
+   "machine_name_id": "548827cb-00e8-43ea-b171-38d360439494",
+   "percent": 0.02,
+   "digital": "1:20",
+   "decimal": "1.33",
+   "text": "1 hr 20 mins",
+   "hours": 1,
+   "minutes": 20
+  },
+  {
    "total_seconds": 3500.405,
    "name": "Mac-235.lan",
    "machine_name_id": "cfae7e23-64fe-4df8-88ad-e43ee860a7cd",
@@ -510,28 +521,28 @@
    "minutes": 0
   }
  ],
- "daily_average_including_other_language": 23173.0,
+ "daily_average_including_other_language": 23155.0,
  "is_up_to_date_pending_future": false,
  "percent_calculated": 100,
  "languages": [
   {
    "name": "Kairo",
-   "total_seconds": 6881175.602714,
+   "total_seconds": 6887438.906714,
    "ai_coding_seconds": "371401.446094",
-   "manual_coding_seconds": "6509774.156620",
-   "percent": 31.9,
-   "digital": "1911:26",
-   "decimal": "1911.43",
-   "text": "1,911 hrs 26 mins",
-   "hours": 1911,
-   "minutes": 26
+   "manual_coding_seconds": "6516037.460620",
+   "percent": 31.92,
+   "digital": "1913:10",
+   "decimal": "1913.17",
+   "text": "1,913 hrs 10 mins",
+   "hours": 1913,
+   "minutes": 10
   },
   {
    "name": "C++",
    "total_seconds": 5211246.751103,
    "ai_coding_seconds": "100915.543058",
    "manual_coding_seconds": "5110331.208045",
-   "percent": 24.16,
+   "percent": 24.15,
    "digital": "1447:34",
    "decimal": "1447.57",
    "text": "1,447 hrs 34 mins",
@@ -543,7 +554,7 @@
    "total_seconds": 3131768.854738,
    "ai_coding_seconds": "24529.380243",
    "manual_coding_seconds": "3107239.474495",
-   "percent": 14.52,
+   "percent": 14.51,
    "digital": "869:56",
    "decimal": "869.93",
    "text": "869 hrs 56 mins",
@@ -651,7 +662,7 @@
    "total_seconds": 266493.515129,
    "ai_coding_seconds": "13581.250981",
    "manual_coding_seconds": "252912.264148",
-   "percent": 1.24,
+   "percent": 1.23,
    "digital": "74:01",
    "decimal": "74.02",
    "text": "74 hrs 1 min",
@@ -1595,14 +1606,14 @@
    "minutes": 0
   }
  ],
- "human_readable_total_including_other_language": "5,992 hrs 44 mins",
+ "human_readable_total_including_other_language": "5,994 hrs 28 mins",
  "best_day": {
   "date": "2026-02-25",
   "total_seconds": 70468.251,
   "text": "19 hrs 34 mins"
  },
- "human_readable_total": "5,738 hrs 44 mins",
- "daily_average": 22191.0,
+ "human_readable_total": "5,740 hrs 28 mins",
+ "daily_average": 22174.0,
  "projects": [
   {
    "total_seconds": 9069088.992442,
@@ -1625,7 +1636,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 42.04,
+   "percent": 42.03,
    "digital": "2519:11",
    "decimal": "2519.18",
    "text": "2,519 hrs 11 mins",
@@ -1739,12 +1750,12 @@
    "minutes": 35
   },
   {
-   "total_seconds": 1695818.277,
+   "total_seconds": 1702081.581,
    "name": "kairo",
    "ai_additions": 10168,
    "ai_deletions": 419,
-   "human_additions": 1034636,
-   "human_deletions": 1297344,
+   "human_additions": 1034749,
+   "human_deletions": 1297457,
    "ai_model_line_changes": {
     "Fable": 18,
     "Opus": 9621,
@@ -1790,12 +1801,12 @@
     }
    ],
    "ai_model_total_cost": 2297.204635,
-   "percent": 7.86,
-   "digital": "471:03",
-   "decimal": "471.05",
-   "text": "471 hrs 3 mins",
-   "hours": 471,
-   "minutes": 3
+   "percent": 7.89,
+   "digital": "472:48",
+   "decimal": "472.80",
+   "text": "472 hrs 48 mins",
+   "hours": 472,
+   "minutes": 48
   },
   {
    "total_seconds": 1177523.15156,
@@ -1974,7 +1985,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 1.81,
+   "percent": 1.8,
    "digital": "108:11",
    "decimal": "108.18",
    "text": "108 hrs 11 mins",
@@ -6282,18 +6293,18 @@
  "categories": [
   {
    "name": "Coding",
-   "total_seconds": 19208272.803127,
+   "total_seconds": 19212474.953127,
    "percent": 89.03,
-   "digital": "5335:37",
-   "decimal": "5335.62",
-   "text": "5,335 hrs 37 mins",
-   "hours": 5335,
-   "minutes": 37
+   "digital": "5336:47",
+   "decimal": "5336.78",
+   "text": "5,336 hrs 47 mins",
+   "hours": 5336,
+   "minutes": 47
   },
   {
    "name": "AI Coding",
    "total_seconds": 1116703.2694,
-   "percent": 5.18,
+   "percent": 5.17,
    "digital": "310:11",
    "decimal": "310.18",
    "text": "310 hrs 11 mins",
@@ -6302,13 +6313,13 @@
   },
   {
    "name": "Writing Tests",
-   "total_seconds": 581085.136604,
-   "percent": 2.69,
-   "digital": "161:24",
-   "decimal": "161.40",
-   "text": "161 hrs 24 mins",
+   "total_seconds": 583146.290604,
+   "percent": 2.7,
+   "digital": "161:59",
+   "decimal": "161.98",
+   "text": "161 hrs 59 mins",
    "hours": 161,
-   "minutes": 24
+   "minutes": 59
   },
   {
    "name": "Writing Docs",
@@ -6351,27 +6362,27 @@
    "minutes": 46
   }
  ],
- "human_readable_daily_average_including_other_language": "6 hrs 26 mins",
- "total_seconds": 20659441.859952,
+ "human_readable_daily_average_including_other_language": "6 hrs 25 mins",
+ "total_seconds": 20665705.163952,
  "operating_systems": [
   {
-   "total_seconds": 11517596.566581,
+   "total_seconds": 11523859.870581,
    "name": "Mac",
    "ai_coding_seconds": "389412.411154",
-   "manual_coding_seconds": "10943712.195478",
-   "percent": 53.39,
-   "digital": "3199:19",
-   "decimal": "3199.32",
-   "text": "3,199 hrs 19 mins",
-   "hours": 3199,
-   "minutes": 19
+   "manual_coding_seconds": "10949975.499478",
+   "percent": 53.4,
+   "digital": "3201:04",
+   "decimal": "3201.07",
+   "text": "3,201 hrs 4 mins",
+   "hours": 3201,
+   "minutes": 4
   },
   {
    "total_seconds": 6148223.033068,
    "name": "Windows",
    "ai_coding_seconds": "32800.698076",
    "manual_coding_seconds": "5966008.608908",
-   "percent": 28.5,
+   "percent": 28.49,
    "digital": "1707:50",
    "decimal": "1707.83",
    "text": "1,707 hrs 50 mins",
@@ -6419,14 +6430,14 @@
  "is_up_to_date": true,
  "editors": [
   {
-   "total_seconds": 20814854.1371,
+   "total_seconds": 20821117.4411,
    "name": "VS Code",
    "ai_coding_seconds": "409978.175814",
-   "manual_coding_seconds": "19903212.236397",
+   "manual_coding_seconds": "19909475.540397",
    "ai_additions": 33782,
    "ai_deletions": 31209,
-   "human_additions": 8885390,
-   "human_deletions": 6785682,
+   "human_additions": 8885503,
+   "human_deletions": 6785795,
    "ai_model_line_changes": {
     "Vscode": 4218,
     "Claude": 4385,
@@ -6485,11 +6496,11 @@
    ],
    "ai_model_total_cost": 392.838555,
    "percent": 96.48,
-   "digital": "5781:54",
-   "decimal": "5781.90",
-   "text": "5,781 hrs 54 mins",
-   "hours": 5781,
-   "minutes": 54
+   "digital": "5783:38",
+   "decimal": "5783.63",
+   "text": "5,783 hrs 38 mins",
+   "hours": 5783,
+   "minutes": 38
   },
   {
    "total_seconds": 704474.84,
@@ -6546,7 +6557,7 @@
     }
    ],
    "ai_model_total_cost": 4030.854688,
-   "percent": 3.27,
+   "percent": 3.26,
    "digital": "195:41",
    "decimal": "195.68",
    "text": "195 hrs 41 mins",
@@ -6804,7 +6815,7 @@
    "minutes": 0
   }
  ],
- "days_minus_holidays": 931,
+ "days_minus_holidays": 932,
  "human_readable_daily_average": "6 hrs 9 mins",
  "dependencies": [
   {
@@ -33438,8 +33449,8 @@
    "minutes": 0
   }
  ],
- "days_including_holidays": 1121,
- "total_seconds_including_other_language": 21573850.826639,
+ "days_including_holidays": 1122,
+ "total_seconds_including_other_language": 21580114.130639,
  "is_already_updating": false,
  "is_cached": true,
  "username": null,
