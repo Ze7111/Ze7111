@@ -3,56 +3,56 @@
  "user_id": "a516ca68-15d5-4ba6-951a-b6fd45c87e8e",
  "range": "all_time",
  "start": "2023-09-25T04:00:00Z",
- "end": "2026-10-25T03:59:59Z",
+ "end": "2026-10-26T03:59:59Z",
  "timeout": 235,
  "writes_only": false,
  "timezone": "America/New_York",
- "ai_additions": 118363,
- "ai_deletions": 33579,
- "human_additions": 8888989,
- "human_deletions": 6789220,
+ "ai_additions": 123112,
+ "ai_deletions": 33693,
+ "human_additions": 8889316,
+ "human_deletions": 6795130,
  "ai_model_line_changes": {
   "Vscode": 4218,
   "Claude": 7578,
-  "Opus": 74134,
+  "Opus": 78997,
   "Fable": 897,
   "Sonnet": 8745,
   "Glm": 6083
  },
- "ai_line_changes_total": 101655,
+ "ai_line_changes_total": 106518,
  "ai_model_costs": {
   "OpenCode": 0.108702,
   "Claude": 300.979758,
-  "Opus": 3661.936582,
-  "Sonnet": 628.260176,
+  "Opus": 3718.828133,
+  "Sonnet": 643.365081,
   "Fable": 96.772571,
   "Claude-Code": 21.97278,
   "Qwen": 1.634934,
   "Glm": 213.614619
  },
- "ai_model_total_cost": 4925.280122,
- "ai_input_tokens": 749812031,
- "ai_cached_input_tokens": 4746761379,
- "ai_output_tokens": 21871242,
- "ai_prompt_length_sum": 187895193,
- "ai_prompt_length_avg": 16720,
- "ai_prompt_events_total": 11238,
- "ai_prompt_events_avg_per_session": 15,
+ "ai_model_total_cost": 4997.276578,
+ "ai_input_tokens": 754042199,
+ "ai_cached_input_tokens": 4966022143,
+ "ai_output_tokens": 22782548,
+ "ai_prompt_length_sum": 192579283,
+ "ai_prompt_length_avg": 16373,
+ "ai_prompt_events_total": 11762,
+ "ai_prompt_events_avg_per_session": 16,
  "ai_prompt_events_median_per_session": 9,
- "ai_prompt_length_avg_per_session": 16940,
+ "ai_prompt_length_avg_per_session": 16774,
  "ai_prompt_length_median_per_session": 8108,
- "ai_sessions": 727,
+ "ai_sessions": 744,
  "holidays": 190,
  "status": "pending_update",
  "created_at": "2026-07-24T02:34:51Z",
- "modified_at": "2026-10-25T04:21:28Z",
+ "modified_at": "2026-10-26T04:24:56Z",
  "operating_systems": [
   {
    "total_seconds": 11563906.705581,
    "name": "Mac",
    "ai_coding_seconds": "429308.327154",
    "manual_coding_seconds": "10950126.418478",
-   "percent": 53.16,
+   "percent": 53.09,
    "digital": "3212:11",
    "decimal": "3212.18",
    "text": "3,212 hrs 11 mins",
@@ -64,7 +64,7 @@
    "name": "Windows",
    "ai_coding_seconds": "49319.796076",
    "manual_coding_seconds": "5975968.464908",
-   "percent": 28.39,
+   "percent": 28.35,
    "digital": "1715:11",
    "decimal": "1715.18",
    "text": "1,715 hrs 11 mins",
@@ -72,16 +72,16 @@
    "minutes": 11
   },
   {
-   "total_seconds": 4001818.817573,
+   "total_seconds": 4028162.025573,
    "name": "Linux",
-   "ai_coding_seconds": "768034.014000",
-   "manual_coding_seconds": "3054951.701688",
-   "percent": 18.4,
-   "digital": "1111:36",
-   "decimal": "1111.60",
-   "text": "1,111 hrs 36 mins",
-   "hours": 1111,
-   "minutes": 36
+   "ai_coding_seconds": "789710.951000",
+   "manual_coding_seconds": "3059615.364688",
+   "percent": 18.5,
+   "digital": "1118:56",
+   "decimal": "1118.93",
+   "text": "1,118 hrs 56 mins",
+   "hours": 1118,
+   "minutes": 56
   },
   {
    "total_seconds": 11688.077417,
@@ -112,7 +112,7 @@
  "is_already_updating": false,
  "dependencies": [
   {
-   "total_seconds": 2479938.16355,
+   "total_seconds": 2479941.34955,
    "name": "vector",
    "percent": 4.46,
    "digital": "688:52",
@@ -142,14 +142,14 @@
    "minutes": 14
   },
   {
-   "total_seconds": 1937517.64409,
+   "total_seconds": 1937520.54609,
    "name": "memory",
    "percent": 3.49,
-   "digital": "538:11",
-   "decimal": "538.18",
-   "text": "538 hrs 11 mins",
+   "digital": "538:12",
+   "decimal": "538.20",
+   "text": "538 hrs 12 mins",
    "hours": 538,
-   "minutes": 11
+   "minutes": 12
   },
   {
    "total_seconds": 1865946.322043,
@@ -172,7 +172,7 @@
    "minutes": 20
   },
   {
-   "total_seconds": 1205105.966522,
+   "total_seconds": 1205118.573522,
    "name": "utility",
    "percent": 2.17,
    "digital": "334:45",
@@ -322,24 +322,24 @@
    "minutes": 4
   },
   {
-   "total_seconds": 527503.545408,
+   "total_seconds": 527784.386408,
    "name": "subprocess",
    "percent": 0.95,
-   "digital": "146:31",
-   "decimal": "146.52",
-   "text": "146 hrs 31 mins",
+   "digital": "146:36",
+   "decimal": "146.60",
+   "text": "146 hrs 36 mins",
    "hours": 146,
-   "minutes": 31
+   "minutes": 36
   },
   {
-   "total_seconds": 510829.55713,
+   "total_seconds": 510968.24013,
    "name": "stdexcept",
    "percent": 0.92,
-   "digital": "141:53",
-   "decimal": "141.88",
-   "text": "141 hrs 53 mins",
+   "digital": "141:56",
+   "decimal": "141.93",
+   "text": "141 hrs 56 mins",
    "hours": 141,
-   "minutes": 53
+   "minutes": 56
   },
   {
    "total_seconds": 496374.063286,
@@ -422,14 +422,14 @@
    "minutes": 1
   },
   {
-   "total_seconds": 452473.016297,
+   "total_seconds": 452753.857297,
    "name": "re",
    "percent": 0.81,
-   "digital": "125:41",
-   "decimal": "125.68",
-   "text": "125 hrs 41 mins",
+   "digital": "125:45",
+   "decimal": "125.75",
+   "text": "125 hrs 45 mins",
    "hours": 125,
-   "minutes": 41
+   "minutes": 45
   },
   {
    "total_seconds": 442897.537346,
@@ -442,14 +442,14 @@
    "minutes": 1
   },
   {
-   "total_seconds": 437545.21202,
+   "total_seconds": 437588.02502,
    "name": "unordered_map",
    "percent": 0.79,
-   "digital": "121:32",
-   "decimal": "121.53",
-   "text": "121 hrs 32 mins",
+   "digital": "121:33",
+   "decimal": "121.55",
+   "text": "121 hrs 33 mins",
    "hours": 121,
-   "minutes": 32
+   "minutes": 33
   },
   {
    "total_seconds": 436762.463402,
@@ -462,14 +462,14 @@
    "minutes": 19
   },
   {
-   "total_seconds": 425719.507857,
+   "total_seconds": 426000.348857,
    "name": "pathlib",
    "percent": 0.77,
-   "digital": "118:15",
-   "decimal": "118.25",
-   "text": "118 hrs 15 mins",
+   "digital": "118:20",
+   "decimal": "118.33",
+   "text": "118 hrs 20 mins",
    "hours": 118,
-   "minutes": 15
+   "minutes": 20
   },
   {
    "total_seconds": 392671.754861,
@@ -482,14 +482,14 @@
    "minutes": 4
   },
   {
-   "total_seconds": 372752.838618,
+   "total_seconds": 372907.022618,
    "name": "concurrent",
    "percent": 0.67,
-   "digital": "103:32",
-   "decimal": "103.53",
-   "text": "103 hrs 32 mins",
+   "digital": "103:35",
+   "decimal": "103.58",
+   "text": "103 hrs 35 mins",
    "hours": 103,
-   "minutes": 32
+   "minutes": 35
   },
   {
    "total_seconds": 365372.72818,
@@ -522,7 +522,7 @@
    "minutes": 20
   },
   {
-   "total_seconds": 340949.367305,
+   "total_seconds": 340952.553305,
    "name": "algorithm",
    "percent": 0.61,
    "digital": "94:42",
@@ -542,7 +542,7 @@
    "minutes": 9
   },
   {
-   "total_seconds": 329420.49422,
+   "total_seconds": 329423.33322,
    "name": "variant",
    "percent": 0.59,
    "digital": "91:30",
@@ -562,24 +562,24 @@
    "minutes": 32
   },
   {
-   "total_seconds": 320563.999255,
+   "total_seconds": 320844.840255,
    "name": "argparse",
    "percent": 0.58,
-   "digital": "89:02",
-   "decimal": "89.03",
-   "text": "89 hrs 2 mins",
+   "digital": "89:07",
+   "decimal": "89.12",
+   "text": "89 hrs 7 mins",
    "hours": 89,
-   "minutes": 2
+   "minutes": 7
   },
   {
-   "total_seconds": 316852.728666,
+   "total_seconds": 316865.335666,
    "name": "type_traits",
    "percent": 0.57,
-   "digital": "88:00",
-   "decimal": "88.00",
-   "text": "88 hrs",
+   "digital": "88:01",
+   "decimal": "88.02",
+   "text": "88 hrs 1 min",
    "hours": 88,
-   "minutes": 0
+   "minutes": 1
   },
   {
    "total_seconds": 314930.306189,
@@ -634,7 +634,7 @@
   {
    "total_seconds": 275141.453957,
    "name": "windows",
-   "percent": 0.5,
+   "percent": 0.49,
    "digital": "76:25",
    "decimal": "76.42",
    "text": "76 hrs 25 mins",
@@ -762,7 +762,7 @@
    "minutes": 54
   },
   {
-   "total_seconds": 211443.742215,
+   "total_seconds": 211486.555215,
    "name": "functional",
    "percent": 0.38,
    "digital": "58:44",
@@ -862,14 +862,14 @@
    "minutes": 49
   },
   {
-   "total_seconds": 182586.906101,
+   "total_seconds": 182741.090101,
    "name": "shutil",
    "percent": 0.33,
-   "digital": "50:43",
-   "decimal": "50.72",
-   "text": "50 hrs 43 mins",
+   "digital": "50:45",
+   "decimal": "50.75",
+   "text": "50 hrs 45 mins",
    "hours": 50,
-   "minutes": 43
+   "minutes": 45
   },
   {
    "total_seconds": 182532.69834,
@@ -892,14 +892,14 @@
    "minutes": 49
   },
   {
-   "total_seconds": 178743.694732,
+   "total_seconds": 178897.878732,
    "name": "dataclasses",
    "percent": 0.32,
-   "digital": "49:39",
-   "decimal": "49.65",
-   "text": "49 hrs 39 mins",
+   "digital": "49:41",
+   "decimal": "49.68",
+   "text": "49 hrs 41 mins",
    "hours": 49,
-   "minutes": 39
+   "minutes": 41
   },
   {
    "total_seconds": 178554.219812,
@@ -1552,14 +1552,14 @@
    "minutes": 5
   },
   {
-   "total_seconds": 63920.16159,
+   "total_seconds": 64201.00259,
    "name": "tempfile",
-   "percent": 0.11,
-   "digital": "17:45",
-   "decimal": "17.75",
-   "text": "17 hrs 45 mins",
+   "percent": 0.12,
+   "digital": "17:50",
+   "decimal": "17.83",
+   "text": "17 hrs 50 mins",
    "hours": 17,
-   "minutes": 45
+   "minutes": 50
   },
   {
    "total_seconds": 63676.938088,
@@ -2032,18 +2032,18 @@
    "minutes": 55
   },
   {
-   "total_seconds": 35581.875705,
-   "name": "vm.hh",
+   "total_seconds": 35734.423878,
+   "name": "glob",
    "percent": 0.06,
-   "digital": "9:53",
-   "decimal": "9.88",
-   "text": "9 hrs 53 mins",
+   "digital": "9:55",
+   "decimal": "9.92",
+   "text": "9 hrs 55 mins",
    "hours": 9,
-   "minutes": 53
+   "minutes": 55
   },
   {
-   "total_seconds": 35580.239878,
-   "name": "glob",
+   "total_seconds": 35581.875705,
+   "name": "vm.hh",
    "percent": 0.06,
    "digital": "9:53",
    "decimal": "9.88",
@@ -3732,6 +3732,16 @@
    "minutes": 36
   },
   {
+   "total_seconds": 9010.024742,
+   "name": "difflib",
+   "percent": 0.02,
+   "digital": "2:30",
+   "decimal": "2.50",
+   "text": "2 hrs 30 mins",
+   "hours": 2,
+   "minutes": 30
+  },
+  {
    "total_seconds": 9002.202,
    "name": "compile_commands.hpp",
    "percent": 0.02,
@@ -3770,16 +3780,6 @@
    "text": "2 hrs 28 mins",
    "hours": 2,
    "minutes": 28
-  },
-  {
-   "total_seconds": 8855.840742,
-   "name": "difflib",
-   "percent": 0.02,
-   "digital": "2:27",
-   "decimal": "2.45",
-   "text": "2 hrs 27 mins",
-   "hours": 2,
-   "minutes": 27
   },
   {
    "total_seconds": 8623.763,
@@ -4632,7 +4632,7 @@
    "minutes": 21
   },
   {
-   "total_seconds": 4823.784,
+   "total_seconds": 4840.243,
    "name": "lib.hh",
    "percent": 0.01,
    "digital": "1:20",
@@ -5522,6 +5522,16 @@
    "minutes": 54
   },
   {
+   "total_seconds": 3214.044452,
+   "name": "shlex",
+   "percent": 0.01,
+   "digital": "0:53",
+   "decimal": "0.88",
+   "text": "53 mins",
+   "hours": 0,
+   "minutes": 53
+  },
+  {
    "total_seconds": 3208.777533,
    "name": "traits.hh",
    "percent": 0.01,
@@ -5600,16 +5610,6 @@
    "text": "51 mins",
    "hours": 0,
    "minutes": 51
-  },
-  {
-   "total_seconds": 3059.860452,
-   "name": "shlex",
-   "percent": 0.01,
-   "digital": "0:50",
-   "decimal": "0.83",
-   "text": "50 mins",
-   "hours": 0,
-   "minutes": 50
   },
   {
    "total_seconds": 3054.063034,
@@ -10792,6 +10792,16 @@
    "minutes": 2
   },
   {
+   "total_seconds": 144.777,
+   "name": "relay.k",
+   "percent": 0.0,
+   "digital": "0:02",
+   "decimal": "0.03",
+   "text": "2 mins",
+   "hours": 0,
+   "minutes": 2
+  },
+  {
    "total_seconds": 142.09,
    "name": "pygame_sdl2",
    "percent": 0.0,
@@ -11714,6 +11724,16 @@
   {
    "total_seconds": 93.267865,
    "name": "ntpath",
+   "percent": 0.0,
+   "digital": "0:01",
+   "decimal": "0.02",
+   "text": "1 min",
+   "hours": 0,
+   "minutes": 1
+  },
+  {
+   "total_seconds": 92.56,
+   "name": "guarded.k",
    "percent": 0.0,
    "digital": "0:01",
    "decimal": "0.02",
@@ -13992,6 +14012,16 @@
    "minutes": 0
   },
   {
+   "total_seconds": 42.813,
+   "name": "point.k",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
    "total_seconds": 42.473215,
    "name": "if",
    "percent": 0.0,
@@ -15634,6 +15664,16 @@
   {
    "total_seconds": 22.7272,
    "name": "modules",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 22.472,
+   "name": "store.hh",
    "percent": 0.0,
    "digital": "0:00",
    "decimal": "0.00",
@@ -17374,6 +17414,16 @@
   {
    "total_seconds": 13.026268,
    "name": "d3-scale",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 12.607,
+   "name": "widgets.k",
    "percent": 0.0,
    "digital": "0:00",
    "decimal": "0.00",
@@ -20292,6 +20342,16 @@
    "minutes": 0
   },
   {
+   "total_seconds": 3.186,
+   "name": "ver.k",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
    "total_seconds": 3.115483,
    "name": "include\\types\\builtins\\primitives.hh  H_NAMESPACE_BEGIN H_STD_NAMESPACE_BEGIN  namespace String  template <typename Traits, typename CharT",
    "percent": 0.0,
@@ -20702,6 +20762,26 @@
    "minutes": 0
   },
   {
+   "total_seconds": 2.902,
+   "name": "shape.hh",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 2.902,
+   "name": "circle.k",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
    "total_seconds": 2.884351,
    "name": "const_cast.hh\" #include <unsafe_cast.hh\"  H_NAMESPACE_BEGIN H_STD_NAMESPACE_BEGIN",
    "percent": 0.0,
@@ -20724,6 +20804,16 @@
   {
    "total_seconds": 2.849228,
    "name": "ffi \"c++\" import \"stdio.h\";",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 2.839,
+   "name": "shapes2.k",
    "percent": 0.0,
    "digital": "0:00",
    "decimal": "0.00",
@@ -26977,7 +27067,7 @@
    "total_seconds": 6186390.064485,
    "name": "Dhruvan-new-pc",
    "machine_name_id": "018cb41a-b4a9-46c8-9e96-db198b2664e5",
-   "percent": 28.44,
+   "percent": 28.4,
    "digital": "1718:26",
    "decimal": "1718.43",
    "text": "1,718 hrs 26 mins",
@@ -26988,7 +27078,7 @@
    "total_seconds": 3975820.036474,
    "name": "gofy-ahh-chromebook.local",
    "machine_name_id": "018afc95-3978-4d18-8d76-5848c7c8695b",
-   "percent": 18.28,
+   "percent": 18.25,
    "digital": "1104:23",
    "decimal": "1104.38",
    "text": "1,104 hrs 23 mins",
@@ -26996,21 +27086,21 @@
    "minutes": 23
   },
   {
-   "total_seconds": 3240865.005574,
+   "total_seconds": 3267208.213574,
    "name": "archlinux",
    "machine_name_id": "6351752d-57ac-462c-9042-13e2d55a1a3d",
-   "percent": 14.9,
-   "digital": "900:14",
-   "decimal": "900.23",
-   "text": "900 hrs 14 mins",
-   "hours": 900,
-   "minutes": 14
+   "percent": 15.0,
+   "digital": "907:33",
+   "decimal": "907.55",
+   "text": "907 hrs 33 mins",
+   "hours": 907,
+   "minutes": 33
   },
   {
    "total_seconds": 2688859.872812,
    "name": "mac.notrust.clients.wireless.pfw.edu",
    "machine_name_id": "4c926113-b2ac-4f71-bf25-ce4b89dcaf43",
-   "percent": 12.36,
+   "percent": 12.35,
    "digital": "746:54",
    "decimal": "746.90",
    "text": "746 hrs 54 mins",
@@ -27021,7 +27111,7 @@
    "total_seconds": 1892610.017,
    "name": "dhruvans-MacBook-Pro.local",
    "machine_name_id": "db62cd50-f7c1-48b2-9810-3c6a7ffee546",
-   "percent": 8.7,
+   "percent": 8.69,
    "digital": "525:43",
    "decimal": "525.72",
    "text": "525 hrs 43 mins",
@@ -27043,7 +27133,7 @@
    "total_seconds": 651840.206,
    "name": "dhcp-10-85-7-241",
    "machine_name_id": "5283e871-98bf-4443-b58b-32c5d9a2e31a",
-   "percent": 3.0,
+   "percent": 2.99,
    "digital": "181:04",
    "decimal": "181.07",
    "text": "181 hrs 4 mins",
@@ -27054,7 +27144,7 @@
    "total_seconds": 412697.097427,
    "name": "Mac.mshome.net",
    "machine_name_id": "b3f335cd-4db3-4488-95b5-01b6c2d37f09",
-   "percent": 1.9,
+   "percent": 1.89,
    "digital": "114:38",
    "decimal": "114.63",
    "text": "114 hrs 38 mins",
@@ -27449,14 +27539,14 @@
  ],
  "editors": [
   {
-   "total_seconds": 20859815.6151,
+   "total_seconds": 20865045.0531,
    "name": "VS Code",
-   "ai_coding_seconds": "415885.028814",
-   "manual_coding_seconds": "19941968.539397",
+   "ai_coding_seconds": "416448.195814",
+   "manual_coding_seconds": "19946632.202397",
    "ai_additions": 33782,
    "ai_deletions": 31209,
-   "human_additions": 8888190,
-   "human_deletions": 6788701,
+   "human_additions": 8888517,
+   "human_deletions": 6794611,
    "ai_model_line_changes": {
     "Vscode": 4218,
     "Claude": 4385,
@@ -27514,55 +27604,55 @@
     }
    ],
    "ai_model_total_cost": 393.275529,
-   "percent": 95.89,
-   "digital": "5794:23",
-   "decimal": "5794.38",
-   "text": "5,794 hrs 23 mins",
-   "hours": 5794,
-   "minutes": 23
+   "percent": 95.8,
+   "digital": "5795:50",
+   "decimal": "5795.83",
+   "text": "5,795 hrs 50 mins",
+   "hours": 5795,
+   "minutes": 50
   },
   {
-   "total_seconds": 839043.463,
+   "total_seconds": 860157.233,
    "name": "Claude Code",
-   "ai_coding_seconds": "839043.463000",
+   "ai_coding_seconds": "860157.233000",
    "manual_coding_seconds": 0,
-   "ai_additions": 84581,
-   "ai_deletions": 2370,
+   "ai_additions": 89330,
+   "ai_deletions": 2484,
    "human_additions": 0,
    "human_deletions": 0,
    "ai_model_line_changes": {
     "Claude": 3193,
-    "Opus": 74134,
+    "Opus": 78997,
     "Sonnet": 8745,
     "Fable": 879
    },
    "ai_model_costs": {
     "Claude": 144.036822,
-    "Opus": 3661.936582,
-    "Sonnet": 628.260176,
+    "Opus": 3718.828133,
+    "Sonnet": 643.365081,
     "Fable": 96.136079
    },
-   "ai_input_tokens": 695333563,
-   "ai_output_tokens": 21290556,
-   "ai_prompt_length_avg": 16854,
-   "ai_prompt_length_avg_per_session": 21442,
+   "ai_input_tokens": 699563731,
+   "ai_output_tokens": 22201862,
+   "ai_prompt_length_avg": 16454,
+   "ai_prompt_length_avg_per_session": 21136,
    "ai_prompt_length_median_per_session": 5449,
-   "ai_prompt_length_sum": 166260071,
-   "ai_prompt_events_total": 9865,
-   "ai_prompt_events_avg_per_session": 15,
+   "ai_prompt_length_sum": 170944161,
+   "ai_prompt_events_total": 10389,
+   "ai_prompt_events_avg_per_session": 16,
    "ai_prompt_events_median_per_session": 2,
-   "ai_sessions": 638,
-   "ai_cached_input_tokens": 4670406579,
+   "ai_sessions": 655,
+   "ai_cached_input_tokens": 4889667343,
    "ai_model_breakdown": [
     {
      "name": "Opus",
-     "lines": 74134,
-     "cost": 3661.936582
+     "lines": 78997,
+     "cost": 3718.828133
     },
     {
      "name": "Sonnet",
      "lines": 8745,
-     "cost": 628.260176
+     "cost": 643.365081
     },
     {
      "name": "Claude",
@@ -27575,13 +27665,13 @@
      "cost": 96.136079
     }
    ],
-   "ai_model_total_cost": 4530.369659,
-   "percent": 3.86,
-   "digital": "233:04",
-   "decimal": "233.07",
-   "text": "233 hrs 4 mins",
-   "hours": 233,
-   "minutes": 4
+   "ai_model_total_cost": 4602.366115,
+   "percent": 3.95,
+   "digital": "238:55",
+   "decimal": "238.92",
+   "text": "238 hrs 55 mins",
+   "hours": 238,
+   "minutes": 55
   },
   {
    "total_seconds": 42856.630417,
@@ -27835,78 +27925,78 @@
   }
  ],
  "is_up_to_date_pending_future": false,
- "days_minus_holidays": 936,
- "daily_average": 22190.0,
- "daily_average_including_other_language": 23241.0,
- "days_including_holidays": 1126,
+ "days_minus_holidays": 937,
+ "daily_average": 22177.0,
+ "daily_average_including_other_language": 23244.0,
+ "days_including_holidays": 1127,
  "percent_calculated": 100,
  "languages": [
   {
    "name": "Kairo",
-   "total_seconds": 6922013.333714,
-   "ai_coding_seconds": "392077.125094",
-   "manual_coding_seconds": "6529936.208620",
-   "percent": 31.82,
-   "digital": "1922:46",
-   "decimal": "1922.77",
-   "text": "1,922 hrs 46 mins",
-   "hours": 1922,
-   "minutes": 46
+   "total_seconds": 6927969.635714,
+   "ai_coding_seconds": "395073.485094",
+   "manual_coding_seconds": "6532896.150620",
+   "percent": 31.81,
+   "digital": "1924:26",
+   "decimal": "1924.43",
+   "text": "1,924 hrs 26 mins",
+   "hours": 1924,
+   "minutes": 26
   },
   {
    "name": "C++",
-   "total_seconds": 5217716.522103,
-   "ai_coding_seconds": "102453.475058",
-   "manual_coding_seconds": "5115263.047045",
-   "percent": 23.99,
-   "digital": "1449:21",
-   "decimal": "1449.35",
-   "text": "1,449 hrs 21 mins",
+   "total_seconds": 5218269.041103,
+   "ai_coding_seconds": "102732.848058",
+   "manual_coding_seconds": "5115536.193045",
+   "percent": 23.96,
+   "digital": "1449:31",
+   "decimal": "1449.52",
+   "text": "1,449 hrs 31 mins",
    "hours": 1449,
-   "minutes": 21
+   "minutes": 31
   },
   {
    "name": "Python",
-   "total_seconds": 3135728.439738,
-   "ai_coding_seconds": "27812.367243",
-   "manual_coding_seconds": "3107916.072495",
-   "percent": 14.41,
-   "digital": "871:02",
-   "decimal": "871.03",
-   "text": "871 hrs 2 mins",
+   "total_seconds": 3136009.280738,
+   "ai_coding_seconds": "27966.551243",
+   "manual_coding_seconds": "3108042.729495",
+   "percent": 14.4,
+   "digital": "871:06",
+   "decimal": "871.10",
+   "text": "871 hrs 6 mins",
    "hours": 871,
-   "minutes": 2
+   "minutes": 6
   },
   {
    "name": "Other",
-   "total_seconds": 983335.470687,
-   "ai_coding_seconds": "470613.358737",
+   "total_seconds": 999732.493687,
+   "ai_coding_seconds": "487007.773737",
    "manual_coding_seconds": "0.000000",
-   "percent": 4.52,
-   "digital": "273:08",
-   "decimal": "273.13",
-   "text": "273 hrs 8 mins",
-   "hours": 273,
-   "minutes": 8
+   "percent": 4.59,
+   "digital": "277:42",
+   "decimal": "277.70",
+   "text": "277 hrs 42 mins",
+   "hours": 277,
+   "minutes": 42
   },
   {
    "name": "Markdown",
-   "total_seconds": 845365.33122,
-   "ai_coding_seconds": "79884.751681",
-   "manual_coding_seconds": "765480.579539",
+   "total_seconds": 846751.58422,
+   "ai_coding_seconds": "81257.034681",
+   "manual_coding_seconds": "765494.549539",
    "percent": 3.89,
-   "digital": "234:49",
-   "decimal": "234.82",
-   "text": "234 hrs 49 mins",
-   "hours": 234,
-   "minutes": 49
+   "digital": "235:12",
+   "decimal": "235.20",
+   "text": "235 hrs 12 mins",
+   "hours": 235,
+   "minutes": 12
   },
   {
    "name": "Java",
    "total_seconds": 719376.787035,
    "ai_coding_seconds": "0.000000",
    "manual_coding_seconds": "719376.787035",
-   "percent": 3.31,
+   "percent": 3.3,
    "digital": "199:49",
    "decimal": "199.82",
    "text": "199 hrs 49 mins",
@@ -27927,15 +28017,15 @@
   },
   {
    "name": "MDX",
-   "total_seconds": 434630.64567,
-   "ai_coding_seconds": "24125.875628",
-   "manual_coding_seconds": "410504.770042",
+   "total_seconds": 435403.25467,
+   "ai_coding_seconds": "24458.988628",
+   "manual_coding_seconds": "410944.266042",
    "percent": 2.0,
-   "digital": "120:43",
-   "decimal": "120.72",
-   "text": "120 hrs 43 mins",
+   "digital": "120:56",
+   "decimal": "120.93",
+   "text": "120 hrs 56 mins",
    "hours": 120,
-   "minutes": 43
+   "minutes": 56
   },
   {
    "name": "Rust",
@@ -27963,22 +28053,22 @@
   },
   {
    "name": "JSON",
-   "total_seconds": 282712.272562,
-   "ai_coding_seconds": "7113.963993",
-   "manual_coding_seconds": "275598.308569",
+   "total_seconds": 283011.740562,
+   "ai_coding_seconds": "7149.465993",
+   "manual_coding_seconds": "275862.274569",
    "percent": 1.3,
-   "digital": "78:31",
-   "decimal": "78.52",
-   "text": "78 hrs 31 mins",
+   "digital": "78:36",
+   "decimal": "78.60",
+   "text": "78 hrs 36 mins",
    "hours": 78,
-   "minutes": 31
+   "minutes": 36
   },
   {
    "name": "EBNF",
    "total_seconds": 266493.515129,
    "ai_coding_seconds": "13581.250981",
    "manual_coding_seconds": "252912.264148",
-   "percent": 1.23,
+   "percent": 1.22,
    "digital": "74:01",
    "decimal": "74.02",
    "text": "74 hrs 1 min",
@@ -27987,15 +28077,15 @@
   },
   {
    "name": "Text",
-   "total_seconds": 238591.796015,
-   "ai_coding_seconds": "31414.754000",
-   "manual_coding_seconds": "207177.042015",
+   "total_seconds": 239189.247015,
+   "ai_coding_seconds": "31463.895000",
+   "manual_coding_seconds": "207725.352015",
    "percent": 1.1,
-   "digital": "66:16",
-   "decimal": "66.27",
-   "text": "66 hrs 16 mins",
+   "digital": "66:26",
+   "decimal": "66.43",
+   "text": "66 hrs 26 mins",
    "hours": 66,
-   "minutes": 16
+   "minutes": 26
   },
   {
    "name": "Astro",
@@ -28014,7 +28104,7 @@
    "total_seconds": 140357.926958,
    "ai_coding_seconds": "12178.713331",
    "manual_coding_seconds": "128179.213627",
-   "percent": 0.65,
+   "percent": 0.64,
    "digital": "38:59",
    "decimal": "38.98",
    "text": "38 hrs 59 mins",
@@ -28071,15 +28161,15 @@
   },
   {
    "name": "TOML",
-   "total_seconds": 78045.145816,
-   "ai_coding_seconds": "2307.775000",
+   "total_seconds": 78107.711816,
+   "ai_coding_seconds": "2370.341000",
    "manual_coding_seconds": "75737.370816",
    "percent": 0.36,
-   "digital": "21:40",
-   "decimal": "21.67",
-   "text": "21 hrs 40 mins",
+   "digital": "21:41",
+   "decimal": "21.68",
+   "text": "21 hrs 41 mins",
    "hours": 21,
-   "minutes": 40
+   "minutes": 41
   },
   {
    "name": "CSS",
@@ -28191,15 +28281,15 @@
   },
   {
    "name": "Diff",
-   "total_seconds": 23632.256,
+   "total_seconds": 23670.432,
    "ai_coding_seconds": "813.942000",
-   "manual_coding_seconds": "22818.314000",
+   "manual_coding_seconds": "22856.490000",
    "percent": 0.11,
-   "digital": "6:33",
-   "decimal": "6.55",
-   "text": "6 hrs 33 mins",
+   "digital": "6:34",
+   "decimal": "6.57",
+   "text": "6 hrs 34 mins",
    "hours": 6,
-   "minutes": 33
+   "minutes": 34
   },
   {
    "name": "HTML",
@@ -28922,47 +29012,47 @@
    "minutes": 0
   }
  ],
- "total_seconds": 20770045.456952,
+ "total_seconds": 20779991.641952,
  "categories": [
   {
    "name": "Coding",
-   "total_seconds": 19243996.722127,
-   "percent": 88.46,
-   "digital": "5345:33",
-   "decimal": "5345.55",
-   "text": "5,345 hrs 33 mins",
-   "hours": 5345,
-   "minutes": 33
+   "total_seconds": 19246810.507127,
+   "percent": 88.37,
+   "digital": "5346:20",
+   "decimal": "5346.33",
+   "text": "5,346 hrs 20 mins",
+   "hours": 5346,
+   "minutes": 20
   },
   {
    "name": "AI Coding",
-   "total_seconds": 1257178.7454,
-   "percent": 5.78,
-   "digital": "349:12",
-   "decimal": "349.20",
-   "text": "349 hrs 12 mins",
-   "hours": 349,
-   "minutes": 12
+   "total_seconds": 1278855.6824,
+   "percent": 5.87,
+   "digital": "355:14",
+   "decimal": "355.23",
+   "text": "355 hrs 14 mins",
+   "hours": 355,
+   "minutes": 14
   },
   {
    "name": "Writing Tests",
-   "total_seconds": 584331.002604,
+   "total_seconds": 585730.022604,
    "percent": 2.69,
-   "digital": "162:18",
-   "decimal": "162.30",
-   "text": "162 hrs 18 mins",
+   "digital": "162:42",
+   "decimal": "162.70",
+   "text": "162 hrs 42 mins",
    "hours": 162,
-   "minutes": 18
+   "minutes": 42
   },
   {
    "name": "Writing Docs",
-   "total_seconds": 506722.308376,
+   "total_seconds": 507175.774376,
    "percent": 2.33,
-   "digital": "140:45",
-   "decimal": "140.75",
-   "text": "140 hrs 45 mins",
+   "digital": "140:52",
+   "decimal": "140.87",
+   "text": "140 hrs 52 mins",
    "hours": 140,
-   "minutes": 45
+   "minutes": 52
   },
   {
    "name": "Debugging",
@@ -28998,13 +29088,13 @@
  "ai_model_breakdown": [
   {
    "name": "Opus",
-   "lines": 74134,
-   "cost": 3661.936582
+   "lines": 78997,
+   "cost": 3718.828133
   },
   {
    "name": "Sonnet",
    "lines": 8745,
-   "cost": 628.260176
+   "cost": 643.365081
   },
   {
    "name": "Claude",
@@ -29042,8 +29132,8 @@
    "cost": 0.108702
   }
  ],
- "total_seconds_including_other_language": 21753380.927639,
- "human_readable_total": "5,769 hrs 27 mins",
+ "total_seconds_including_other_language": 21779724.135639,
+ "human_readable_total": "5,772 hrs 13 mins",
  "is_stuck": false,
  "best_day": {
   "date": "2026-02-25",
@@ -29072,7 +29162,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 41.69,
+   "percent": 41.64,
    "digital": "2519:11",
    "decimal": "2519.18",
    "text": "2,519 hrs 11 mins",
@@ -29080,43 +29170,43 @@
    "minutes": 11
   },
   {
-   "total_seconds": 2818061.366275,
+   "total_seconds": 2830726.273275,
    "name": "kairo-lang",
-   "ai_additions": 57746,
-   "ai_deletions": 2208,
-   "human_additions": 2107939,
-   "human_deletions": 1846469,
+   "ai_additions": 62338,
+   "ai_deletions": 2322,
+   "human_additions": 2108264,
+   "human_deletions": 1852379,
    "ai_model_line_changes": {
     "Vscode": 1200,
     "Claude": 712,
-    "Opus": 52161,
+    "Opus": 56867,
     "Sonnet": 3854,
     "Fable": 841
    },
    "ai_model_costs": {
     "Claude": 146.75229,
-    "Opus": 1187.339349,
+    "Opus": 1242.259031,
     "Sonnet": 66.338139,
     "Qwen": 0.659984,
     "Claude-Code": 9.771921,
     "Fable": 83.023451
    },
-   "ai_input_tokens": 116670618,
-   "ai_output_tokens": 9893993,
-   "ai_prompt_length_avg": 40452,
-   "ai_prompt_length_avg_per_session": 26954,
+   "ai_input_tokens": 118807730,
+   "ai_output_tokens": 10473348,
+   "ai_prompt_length_avg": 39475,
+   "ai_prompt_length_avg_per_session": 26540,
    "ai_prompt_length_median_per_session": 9628,
-   "ai_prompt_length_sum": 42394081,
-   "ai_prompt_events_total": 1048,
+   "ai_prompt_length_sum": 42474787,
+   "ai_prompt_events_total": 1076,
    "ai_prompt_events_avg_per_session": 5,
    "ai_prompt_events_median_per_session": 3,
-   "ai_sessions": 221,
-   "ai_cached_input_tokens": 3277896332,
+   "ai_sessions": 225,
+   "ai_cached_input_tokens": 3451816989,
    "ai_model_breakdown": [
     {
      "name": "Opus",
-     "lines": 52161,
-     "cost": 1187.339349
+     "lines": 56867,
+     "cost": 1242.259031
     },
     {
      "name": "Sonnet",
@@ -29149,13 +29239,13 @@
      "cost": 0.659984
     }
    ],
-   "ai_model_total_cost": 1493.885134,
-   "percent": 12.95,
-   "digital": "782:47",
-   "decimal": "782.78",
-   "text": "782 hrs 47 mins",
-   "hours": 782,
-   "minutes": 47
+   "ai_model_total_cost": 1548.804816,
+   "percent": 13.0,
+   "digital": "786:18",
+   "decimal": "786.30",
+   "text": "786 hrs 18 mins",
+   "hours": 786,
+   "minutes": 18
   },
   {
    "total_seconds": 1726512.164198,
@@ -29178,7 +29268,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 7.94,
+   "percent": 7.93,
    "digital": "479:35",
    "decimal": "479.58",
    "text": "479 hrs 35 mins",
@@ -29237,7 +29327,7 @@
     }
    ],
    "ai_model_total_cost": 2336.0660789999997,
-   "percent": 7.91,
+   "percent": 7.9,
    "digital": "477:57",
    "decimal": "477.95",
    "text": "477 hrs 57 mins",
@@ -29297,36 +29387,36 @@
    "minutes": 8
   },
   {
-   "total_seconds": 458532.594,
+   "total_seconds": 459354.344,
    "name": "kairo-web",
-   "ai_additions": 7117,
+   "ai_additions": 7274,
    "ai_deletions": 829,
-   "human_additions": 88756,
+   "human_additions": 88758,
    "human_deletions": 104723,
    "ai_model_line_changes": {
     "Vscode": 2753,
     "Claude": 3622,
-    "Opus": 1396
+    "Opus": 1553
    },
    "ai_model_costs": {
     "OpenCode": 0.108702,
     "Claude": 64.842741,
-    "Opus": 154.230721,
+    "Opus": 156.20259,
     "Claude-Code": 1.670799,
     "Sonnet": 1.329987,
     "Fable": 0.475355
    },
-   "ai_input_tokens": 32710167,
-   "ai_output_tokens": 2288005,
-   "ai_prompt_length_avg": 6756,
-   "ai_prompt_length_avg_per_session": 4776,
+   "ai_input_tokens": 32837195,
+   "ai_output_tokens": 2312914,
+   "ai_prompt_length_avg": 6721,
+   "ai_prompt_length_avg_per_session": 4740,
    "ai_prompt_length_median_per_session": 223,
-   "ai_prompt_length_sum": 1141733,
-   "ai_prompt_events_total": 169,
+   "ai_prompt_length_sum": 1149236,
+   "ai_prompt_events_total": 171,
    "ai_prompt_events_avg_per_session": 3,
    "ai_prompt_events_median_per_session": 1,
-   "ai_sessions": 55,
-   "ai_cached_input_tokens": 316234512,
+   "ai_sessions": 57,
+   "ai_cached_input_tokens": 321062404,
    "ai_model_breakdown": [
     {
      "name": "Claude",
@@ -29340,8 +29430,8 @@
     },
     {
      "name": "Opus",
-     "lines": 1396,
-     "cost": 154.230721
+     "lines": 1553,
+     "cost": 156.20259
     },
     {
      "name": "Claude-Code",
@@ -29364,16 +29454,16 @@
      "cost": 0.108702
     }
    ],
-   "ai_model_total_cost": 222.65830499999998,
+   "ai_model_total_cost": 224.63017399999998,
    "percent": 2.11,
-   "digital": "127:22",
-   "decimal": "127.37",
-   "text": "127 hrs 22 mins",
+   "digital": "127:35",
+   "decimal": "127.58",
+   "text": "127 hrs 35 mins",
    "hours": 127,
-   "minutes": 22
+   "minutes": 35
   },
   {
-   "total_seconds": 408407.222,
+   "total_seconds": 421263.773,
    "name": "observer-sessions",
    "ai_additions": 0,
    "ai_deletions": 0,
@@ -29382,25 +29472,25 @@
    "ai_model_line_changes": {},
    "ai_model_costs": {
     "Claude": 4.284516,
-    "Sonnet": 253.040747,
+    "Sonnet": 268.145652,
     "Claude-Code": 0.137766
    },
-   "ai_input_tokens": 43811614,
-   "ai_output_tokens": 5640906,
-   "ai_prompt_length_avg": 14894,
-   "ai_prompt_length_avg_per_session": 17278,
+   "ai_input_tokens": 45777642,
+   "ai_output_tokens": 5947948,
+   "ai_prompt_length_avg": 14600,
+   "ai_prompt_length_avg_per_session": 17141,
    "ai_prompt_length_median_per_session": 4359,
-   "ai_prompt_length_sum": 132218218,
-   "ai_prompt_events_total": 8877,
+   "ai_prompt_length_sum": 136814099,
+   "ai_prompt_events_total": 9371,
    "ai_prompt_events_avg_per_session": 22,
    "ai_prompt_events_median_per_session": 4,
-   "ai_sessions": 412,
-   "ai_cached_input_tokens": 558572572,
+   "ai_sessions": 424,
+   "ai_cached_input_tokens": 599084787,
    "ai_model_breakdown": [
     {
      "name": "Sonnet",
      "lines": 0,
-     "cost": 253.040747
+     "cost": 268.145652
     },
     {
      "name": "Claude",
@@ -29413,13 +29503,13 @@
      "cost": 0.137766
     }
    ],
-   "ai_model_total_cost": 257.463029,
-   "percent": 1.88,
-   "digital": "113:26",
-   "decimal": "113.43",
-   "text": "113 hrs 26 mins",
-   "hours": 113,
-   "minutes": 26
+   "ai_model_total_cost": 272.567934,
+   "percent": 1.93,
+   "digital": "117:01",
+   "decimal": "117.02",
+   "text": "117 hrs 1 min",
+   "hours": 117,
+   "minutes": 1
   },
   {
    "total_seconds": 397329.534722,
@@ -29442,7 +29532,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 1.83,
+   "percent": 1.82,
    "digital": "110:22",
    "decimal": "110.37",
    "text": "110 hrs 22 mins",
@@ -30380,7 +30470,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 0.15,
+   "percent": 0.14,
    "digital": "8:46",
    "decimal": "8.77",
    "text": "8 hrs 46 mins",
@@ -33901,7 +33991,7 @@
    "minutes": 0
   }
  ],
- "human_readable_total_including_other_language": "6,042 hrs 36 mins",
+ "human_readable_total_including_other_language": "6,049 hrs 55 mins",
  "is_up_to_date": true,
  "human_readable_daily_average_including_other_language": "6 hrs 27 mins",
  "is_cached": true,
