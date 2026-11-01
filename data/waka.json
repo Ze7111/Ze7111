@@ -3,528 +3,52 @@
  "user_id": "a516ca68-15d5-4ba6-951a-b6fd45c87e8e",
  "range": "all_time",
  "start": "2023-09-25T04:00:00Z",
- "end": "2026-10-30T03:59:59Z",
+ "end": "2026-10-31T03:59:59Z",
  "timeout": 235,
  "writes_only": false,
  "timezone": "America/New_York",
- "ai_additions": 234849,
- "ai_deletions": 40449,
- "human_additions": 8893524,
- "human_deletions": 6800100,
+ "ai_additions": 234863,
+ "ai_deletions": 40451,
+ "human_additions": 8893527,
+ "human_deletions": 6800218,
  "ai_model_line_changes": {
   "Vscode": 4218,
   "Claude": 7578,
   "Opus": 197482,
   "Fable": 897,
-  "Sonnet": 8753,
+  "Sonnet": 8769,
   "Glm": 6083
  },
- "ai_line_changes_total": 225011,
+ "ai_line_changes_total": 225027,
  "ai_model_costs": {
   "OpenCode": 0.108702,
   "Claude": 300.979758,
   "Opus": 4954.529332,
-  "Sonnet": 717.163492,
+  "Sonnet": 723.9163,
   "Fable": 96.772571,
   "Claude-Code": 21.97278,
   "Qwen": 1.634934,
   "Glm": 213.614619
  },
- "ai_model_total_cost": 6306.776188,
- "ai_input_tokens": 831764460,
- "ai_cached_input_tokens": 9027385772,
- "ai_output_tokens": 34090825,
- "ai_prompt_length_sum": 236480100,
- "ai_prompt_length_avg": 16322,
- "ai_prompt_events_total": 14488,
+ "ai_model_total_cost": 6313.528996,
+ "ai_input_tokens": 832345454,
+ "ai_cached_input_tokens": 9049054829,
+ "ai_output_tokens": 34216526,
+ "ai_prompt_length_sum": 237115770,
+ "ai_prompt_length_avg": 16269,
+ "ai_prompt_events_total": 14575,
  "ai_prompt_events_avg_per_session": 18,
  "ai_prompt_events_median_per_session": 9,
- "ai_prompt_length_avg_per_session": 16725,
- "ai_prompt_length_median_per_session": 8488,
- "ai_sessions": 795,
+ "ai_prompt_length_avg_per_session": 16651,
+ "ai_prompt_length_median_per_session": 8108,
+ "ai_sessions": 801,
  "holidays": 190,
  "status": "pending_update",
  "created_at": "2026-07-24T02:34:51Z",
- "modified_at": "2026-10-30T05:28:31Z",
+ "modified_at": "2026-10-31T05:14:24Z",
+ "is_up_to_date_pending_future": false,
+ "days_including_holidays": 1132,
  "human_readable_daily_average": "6 hrs 10 mins",
- "is_stuck": false,
- "days_minus_holidays": 941,
- "machines": [
-  {
-   "total_seconds": 6186390.064485,
-   "name": "Dhruvan-new-pc",
-   "machine_name_id": "018cb41a-b4a9-46c8-9e96-db198b2664e5",
-   "percent": 28.11,
-   "digital": "1718:26",
-   "decimal": "1718.43",
-   "text": "1,718 hrs 26 mins",
-   "hours": 1718,
-   "minutes": 26
-  },
-  {
-   "total_seconds": 3975820.036474,
-   "name": "gofy-ahh-chromebook.local",
-   "machine_name_id": "018afc95-3978-4d18-8d76-5848c7c8695b",
-   "percent": 18.07,
-   "digital": "1104:23",
-   "decimal": "1104.38",
-   "text": "1,104 hrs 23 mins",
-   "hours": 1104,
-   "minutes": 23
-  },
-  {
-   "total_seconds": 3485863.082574,
-   "name": "archlinux",
-   "machine_name_id": "6351752d-57ac-462c-9042-13e2d55a1a3d",
-   "percent": 15.84,
-   "digital": "968:17",
-   "decimal": "968.28",
-   "text": "968 hrs 17 mins",
-   "hours": 968,
-   "minutes": 17
-  },
-  {
-   "total_seconds": 2688859.872812,
-   "name": "mac.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "4c926113-b2ac-4f71-bf25-ce4b89dcaf43",
-   "percent": 12.22,
-   "digital": "746:54",
-   "decimal": "746.90",
-   "text": "746 hrs 54 mins",
-   "hours": 746,
-   "minutes": 54
-  },
-  {
-   "total_seconds": 1899446.718,
-   "name": "dhruvans-MacBook-Pro.local",
-   "machine_name_id": "db62cd50-f7c1-48b2-9810-3c6a7ffee546",
-   "percent": 8.63,
-   "digital": "527:37",
-   "decimal": "527.62",
-   "text": "527 hrs 37 mins",
-   "hours": 527,
-   "minutes": 37
-  },
-  {
-   "total_seconds": 1090760.717294,
-   "name": "gofyahhromebook.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "e645a163-4564-4941-9bec-901ddad811ed",
-   "percent": 4.96,
-   "digital": "302:59",
-   "decimal": "302.98",
-   "text": "302 hrs 59 mins",
-   "hours": 302,
-   "minutes": 59
-  },
-  {
-   "total_seconds": 651840.206,
-   "name": "dhcp-10-85-7-241",
-   "machine_name_id": "5283e871-98bf-4443-b58b-32c5d9a2e31a",
-   "percent": 2.96,
-   "digital": "181:04",
-   "decimal": "181.07",
-   "text": "181 hrs 4 mins",
-   "hours": 181,
-   "minutes": 4
-  },
-  {
-   "total_seconds": 412697.097427,
-   "name": "Mac.mshome.net",
-   "machine_name_id": "b3f335cd-4db3-4488-95b5-01b6c2d37f09",
-   "percent": 1.88,
-   "digital": "114:38",
-   "decimal": "114.63",
-   "text": "114 hrs 38 mins",
-   "hours": 114,
-   "minutes": 38
-  },
-  {
-   "total_seconds": 213795.214,
-   "name": "dhruvans-mbp.notrust.pfw.edu",
-   "machine_name_id": "b29ab063-cd2c-4303-a849-cef69ae40ba0",
-   "percent": 0.97,
-   "digital": "59:23",
-   "decimal": "59.38",
-   "text": "59 hrs 23 mins",
-   "hours": 59,
-   "minutes": 23
-  },
-  {
-   "total_seconds": 177257.744,
-   "name": "dhruvans-mbp.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "5d356561-a290-437a-8e4e-444618098082",
-   "percent": 0.81,
-   "digital": "49:14",
-   "decimal": "49.23",
-   "text": "49 hrs 14 mins",
-   "hours": 49,
-   "minutes": 14
-  },
-  {
-   "total_seconds": 163702.533,
-   "name": "dhcp-10-100-218-73.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "3bf2c4d2-dbde-4e0f-a2b3-156cd690b467",
-   "percent": 0.74,
-   "digital": "45:28",
-   "decimal": "45.47",
-   "text": "45 hrs 28 mins",
-   "hours": 45,
-   "minutes": 28
-  },
-  {
-   "total_seconds": 137776.546,
-   "name": "Mac",
-   "machine_name_id": "c575e75f-b329-4e26-835f-f8e03df5ca70",
-   "percent": 0.63,
-   "digital": "38:16",
-   "decimal": "38.27",
-   "text": "38 hrs 16 mins",
-   "hours": 38,
-   "minutes": 16
-  },
-  {
-   "total_seconds": 109113.605999,
-   "name": "diamond.pfw.edu",
-   "machine_name_id": "76f87d07-0dc1-402c-89ac-13ee4facc28f",
-   "percent": 0.5,
-   "digital": "30:18",
-   "decimal": "30.30",
-   "text": "30 hrs 18 mins",
-   "hours": 30,
-   "minutes": 18
-  },
-  {
-   "total_seconds": 106525.713826,
-   "name": "gofyahhromebook",
-   "machine_name_id": "c1937387-98fd-491a-b66d-a6261cf28f2f",
-   "percent": 0.48,
-   "digital": "29:35",
-   "decimal": "29.58",
-   "text": "29 hrs 35 mins",
-   "hours": 29,
-   "minutes": 35
-  },
-  {
-   "total_seconds": 101482.610322,
-   "name": "Mac.attlocal.net",
-   "machine_name_id": "b3f0c552-9ade-40c1-a633-cc78cdc65141",
-   "percent": 0.46,
-   "digital": "28:11",
-   "decimal": "28.18",
-   "text": "28 hrs 11 mins",
-   "hours": 28,
-   "minutes": 11
-  },
-  {
-   "total_seconds": 100079.962434,
-   "name": "mac.lan",
-   "machine_name_id": "9635b0fd-dfbd-4380-9e77-27ce1f60836a",
-   "percent": 0.45,
-   "digital": "27:47",
-   "decimal": "27.78",
-   "text": "27 hrs 47 mins",
-   "hours": 27,
-   "minutes": 47
-  },
-  {
-   "total_seconds": 62514.766,
-   "name": "dhcp-10-100-216-65.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "620d7ebd-2514-4ace-a264-881f1860cc37",
-   "percent": 0.28,
-   "digital": "17:21",
-   "decimal": "17.35",
-   "text": "17 hrs 21 mins",
-   "hours": 17,
-   "minutes": 21
-  },
-  {
-   "total_seconds": 55460.291,
-   "name": "Mac.lan",
-   "machine_name_id": "7067d8cb-fc9b-4a8a-8749-023275131c0c",
-   "percent": 0.25,
-   "digital": "15:24",
-   "decimal": "15.40",
-   "text": "15 hrs 24 mins",
-   "hours": 15,
-   "minutes": 24
-  },
-  {
-   "total_seconds": 53660.069,
-   "name": "dhcp-10-100-251-75.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "f8f82bd0-1ff2-49ae-bcf3-08435725675d",
-   "percent": 0.24,
-   "digital": "14:54",
-   "decimal": "14.90",
-   "text": "14 hrs 54 mins",
-   "hours": 14,
-   "minutes": 54
-  },
-  {
-   "total_seconds": 47893.341,
-   "name": "accioconnect.notrust.pfw.edu",
-   "machine_name_id": "0bd05025-a2f2-4f17-b387-9e696887d2ab",
-   "percent": 0.22,
-   "digital": "13:18",
-   "decimal": "13.30",
-   "text": "13 hrs 18 mins",
-   "hours": 13,
-   "minutes": 18
-  },
-  {
-   "total_seconds": 34908.949,
-   "name": "dhcp-10-100-242-180.notrust.pfw.edu",
-   "machine_name_id": "d0c4f496-18b1-43e9-b8ae-06851c6b86ad",
-   "percent": 0.16,
-   "digital": "9:41",
-   "decimal": "9.68",
-   "text": "9 hrs 41 mins",
-   "hours": 9,
-   "minutes": 41
-  },
-  {
-   "total_seconds": 34488.39,
-   "name": "dhcp-10-100-247-43.notrust.pfw.edu",
-   "machine_name_id": "606e404c-3867-49bc-a030-0bd8b01e0c84",
-   "percent": 0.16,
-   "digital": "9:34",
-   "decimal": "9.57",
-   "text": "9 hrs 34 mins",
-   "hours": 9,
-   "minutes": 34
-  },
-  {
-   "total_seconds": 29755.012,
-   "name": "dhcp-10-100-244-9.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "9fe26af3-b491-4d02-8253-9d24cff94d82",
-   "percent": 0.14,
-   "digital": "8:15",
-   "decimal": "8.25",
-   "text": "8 hrs 15 mins",
-   "hours": 8,
-   "minutes": 15
-  },
-  {
-   "total_seconds": 23094.441,
-   "name": "dhcp-10-100-192-202.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "b5dd286c-7917-442c-bc28-0d2f6ff3e38c",
-   "percent": 0.1,
-   "digital": "6:24",
-   "decimal": "6.40",
-   "text": "6 hrs 24 mins",
-   "hours": 6,
-   "minutes": 24
-  },
-  {
-   "total_seconds": 20962.318,
-   "name": "dhcp-10-100-244-30.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "fddb864b-eb41-4bcb-82c7-22470faa9a0c",
-   "percent": 0.1,
-   "digital": "5:49",
-   "decimal": "5.82",
-   "text": "5 hrs 49 mins",
-   "hours": 5,
-   "minutes": 49
-  },
-  {
-   "total_seconds": 17821.304841,
-   "name": "Mac-353.lan",
-   "machine_name_id": "0e4eb667-95c8-4240-b4b3-2a1b52823040",
-   "percent": 0.08,
-   "digital": "4:57",
-   "decimal": "4.95",
-   "text": "4 hrs 57 mins",
-   "hours": 4,
-   "minutes": 57
-  },
-  {
-   "total_seconds": 16448.278297,
-   "name": "gofyahhromebook.home",
-   "machine_name_id": "018bfe56-838e-4911-84a7-1a7c70c33ad1",
-   "percent": 0.07,
-   "digital": "4:34",
-   "decimal": "4.57",
-   "text": "4 hrs 34 mins",
-   "hours": 4,
-   "minutes": 34
-  },
-  {
-   "total_seconds": 15982.395721,
-   "name": "dhcp-10-100-248-245.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "257e1b3e-e686-40f8-ae06-6caf23289f9a",
-   "percent": 0.07,
-   "digital": "4:26",
-   "decimal": "4.43",
-   "text": "4 hrs 26 mins",
-   "hours": 4,
-   "minutes": 26
-  },
-  {
-   "total_seconds": 13991.805,
-   "name": "dhcp-10-100-247-186.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "cc538cf0-c193-421c-af68-5c6896272f5c",
-   "percent": 0.06,
-   "digital": "3:53",
-   "decimal": "3.88",
-   "text": "3 hrs 53 mins",
-   "hours": 3,
-   "minutes": 53
-  },
-  {
-   "total_seconds": 13593.723208,
-   "name": "dhcp-10-100-124-252.mab.clients.wireless.pfw.edu",
-   "machine_name_id": "dfad7f63-1bc9-4bc8-8af1-2aa31ce73acd",
-   "percent": 0.06,
-   "digital": "3:46",
-   "decimal": "3.77",
-   "text": "3 hrs 46 mins",
-   "hours": 3,
-   "minutes": 46
-  },
-  {
-   "total_seconds": 13567.479746,
-   "name": "unknown064cb3f3f2a1.attlocal.net",
-   "machine_name_id": "7e1a7336-5076-4f62-9801-28c588954fa4",
-   "percent": 0.06,
-   "digital": "3:46",
-   "decimal": "3.77",
-   "text": "3 hrs 46 mins",
-   "hours": 3,
-   "minutes": 46
-  },
-  {
-   "total_seconds": 10099.508179,
-   "name": "gofyahhromebook.wireless.pfw.edu",
-   "machine_name_id": "018af1d7-11f6-401b-a830-3d9241cc79b9",
-   "percent": 0.05,
-   "digital": "2:48",
-   "decimal": "2.80",
-   "text": "2 hrs 48 mins",
-   "hours": 2,
-   "minutes": 48
-  },
-  {
-   "total_seconds": 10098.643,
-   "name": "dhcp-10-100-209-209.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "2542608a-a3d3-48e0-b097-cba66de8b9e3",
-   "percent": 0.05,
-   "digital": "2:48",
-   "decimal": "2.80",
-   "text": "2 hrs 48 mins",
-   "hours": 2,
-   "minutes": 48
-  },
-  {
-   "total_seconds": 7028.364,
-   "name": "dhcp-10-100-246-140.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "7ca59f2a-099a-4252-9a2c-007d669530df",
-   "percent": 0.03,
-   "digital": "1:57",
-   "decimal": "1.95",
-   "text": "1 hr 57 mins",
-   "hours": 1,
-   "minutes": 57
-  },
-  {
-   "total_seconds": 5770.985,
-   "name": "Mac-240.lan",
-   "machine_name_id": "6d666d8f-7920-4d80-bc4a-b900db769145",
-   "percent": 0.03,
-   "digital": "1:36",
-   "decimal": "1.60",
-   "text": "1 hr 36 mins",
-   "hours": 1,
-   "minutes": 36
-  },
-  {
-   "total_seconds": 5358.047,
-   "name": "dhcp-10-100-244-92.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "93fa0b79-7743-49f2-ae84-e31e34ba14eb",
-   "percent": 0.02,
-   "digital": "1:29",
-   "decimal": "1.48",
-   "text": "1 hr 29 mins",
-   "hours": 1,
-   "minutes": 29
-  },
-  {
-   "total_seconds": 4815.938,
-   "name": "hnt-6538.apng.wlan.private.upenn.edu",
-   "machine_name_id": "548827cb-00e8-43ea-b171-38d360439494",
-   "percent": 0.02,
-   "digital": "1:20",
-   "decimal": "1.33",
-   "text": "1 hr 20 mins",
-   "hours": 1,
-   "minutes": 20
-  },
-  {
-   "total_seconds": 3500.405,
-   "name": "Mac-235.lan",
-   "machine_name_id": "cfae7e23-64fe-4df8-88ad-e43ee860a7cd",
-   "percent": 0.02,
-   "digital": "0:58",
-   "decimal": "0.97",
-   "text": "58 mins",
-   "hours": 0,
-   "minutes": 58
-  },
-  {
-   "total_seconds": 2760.768,
-   "name": "dhcp-10-100-218-71.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "b59a75eb-22d0-4adb-8738-4d56b68d6110",
-   "percent": 0.01,
-   "digital": "0:46",
-   "decimal": "0.77",
-   "text": "46 mins",
-   "hours": 0,
-   "minutes": 46
-  },
-  {
-   "total_seconds": 100.171,
-   "name": "dhcp-10-100-241-237.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "855851d2-5f4f-43f6-b9a8-942251b4eeb8",
-   "percent": 0.0,
-   "digital": "0:01",
-   "decimal": "0.02",
-   "text": "1 min",
-   "hours": 0,
-   "minutes": 1
-  },
-  {
-   "total_seconds": 57.532,
-   "name": "dhcp-10-100-239-172.notrust.pfw.edu",
-   "machine_name_id": "12f7f54c-d02a-4e39-95df-39460a5fbbdd",
-   "percent": 0.0,
-   "digital": "0:00",
-   "decimal": "0.00",
-   "text": "0 secs",
-   "hours": 0,
-   "minutes": 0
-  },
-  {
-   "total_seconds": 51.082,
-   "name": "dhcp-10-100-245-119.notrust.clients.wireless.pfw.edu",
-   "machine_name_id": "4827bdc7-ff6c-431d-b49f-b1e00af954b6",
-   "percent": 0.0,
-   "digital": "0:00",
-   "decimal": "0.00",
-   "text": "0 secs",
-   "hours": 0,
-   "minutes": 0
-  },
-  {
-   "total_seconds": 19.974,
-   "name": "Mac-48.lan",
-   "machine_name_id": "4c30db4a-a026-4ca0-b0ea-c18b8a4423e2",
-   "percent": 0.0,
-   "digital": "0:00",
-   "decimal": "0.00",
-   "text": "0 secs",
-   "hours": 0,
-   "minutes": 0
-  }
- ],
- "days_including_holidays": 1131,
  "human_readable_daily_average_including_other_language": "6 hrs 29 mins",
  "projects": [
   {
@@ -556,38 +80,38 @@
    "minutes": 11
   },
   {
-   "total_seconds": 2980994.837275,
+   "total_seconds": 2982509.262275,
    "name": "kairo-lang",
-   "ai_additions": 173469,
-   "ai_deletions": 9070,
-   "human_additions": 2112378,
-   "human_deletions": 1857344,
+   "ai_additions": 173483,
+   "ai_deletions": 9072,
+   "human_additions": 2112381,
+   "human_deletions": 1857462,
    "ai_model_line_changes": {
     "Vscode": 1200,
     "Claude": 712,
     "Opus": 174738,
-    "Sonnet": 3862,
+    "Sonnet": 3878,
     "Fable": 841
    },
    "ai_model_costs": {
     "Claude": 146.75229,
     "Opus": 2443.216715,
-    "Sonnet": 66.686386,
+    "Sonnet": 70.890977,
     "Qwen": 0.659984,
     "Claude-Code": 9.771921,
     "Fable": 83.023451
    },
-   "ai_input_tokens": 182116811,
-   "ai_output_tokens": 20069715,
-   "ai_prompt_length_avg": 35598,
-   "ai_prompt_length_avg_per_session": 26156,
+   "ai_input_tokens": 182379466,
+   "ai_output_tokens": 20139011,
+   "ai_prompt_length_avg": 35309,
+   "ai_prompt_length_avg_per_session": 25932,
    "ai_prompt_length_median_per_session": 9628,
-   "ai_prompt_length_sum": 43251343,
-   "ai_prompt_events_total": 1215,
+   "ai_prompt_length_sum": 43254095,
+   "ai_prompt_events_total": 1225,
    "ai_prompt_events_avg_per_session": 5,
    "ai_prompt_events_median_per_session": 3,
-   "ai_sessions": 229,
-   "ai_cached_input_tokens": 7233400735,
+   "ai_sessions": 231,
+   "ai_cached_input_tokens": 7248332347,
    "ai_model_breakdown": [
     {
      "name": "Opus",
@@ -596,8 +120,8 @@
     },
     {
      "name": "Sonnet",
-     "lines": 3862,
-     "cost": 66.686386
+     "lines": 3878,
+     "cost": 70.890977
     },
     {
      "name": "Vscode",
@@ -625,13 +149,13 @@
      "cost": 0.659984
     }
    ],
-   "ai_model_total_cost": 2750.110747,
+   "ai_model_total_cost": 2754.315338,
    "percent": 13.55,
-   "digital": "828:03",
-   "decimal": "828.05",
-   "text": "828 hrs 3 mins",
+   "digital": "828:28",
+   "decimal": "828.47",
+   "text": "828 hrs 28 mins",
    "hours": 828,
-   "minutes": 3
+   "minutes": 28
   },
   {
    "total_seconds": 1726512.164198,
@@ -654,7 +178,7 @@
    "ai_sessions": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 7.85,
+   "percent": 7.84,
    "digital": "479:35",
    "decimal": "479.58",
    "text": "479 hrs 35 mins",
@@ -773,7 +297,7 @@
    "minutes": 18
   },
   {
-   "total_seconds": 486159.511,
+   "total_seconds": 488474.387,
    "name": "observer-sessions",
    "ai_additions": 0,
    "ai_deletions": 0,
@@ -782,25 +306,25 @@
    "ai_model_line_changes": {},
    "ai_model_costs": {
     "Claude": 4.284516,
-    "Sonnet": 341.345296,
+    "Sonnet": 343.893513,
     "Claude-Code": 0.137766
    },
-   "ai_input_tokens": 58625090,
-   "ai_output_tokens": 7330010,
-   "ai_prompt_length_avg": 15054,
-   "ai_prompt_length_avg_per_session": 17189,
+   "ai_input_tokens": 58943429,
+   "ai_output_tokens": 7386415,
+   "ai_prompt_length_avg": 15010,
+   "ai_prompt_length_avg_per_session": 17130,
    "ai_prompt_length_median_per_session": 4359,
-   "ai_prompt_length_sum": 179890509,
-   "ai_prompt_events_total": 11950,
+   "ai_prompt_length_sum": 180523427,
+   "ai_prompt_events_total": 12027,
    "ai_prompt_events_avg_per_session": 25,
    "ai_prompt_events_median_per_session": 4,
-   "ai_sessions": 469,
-   "ai_cached_input_tokens": 767505596,
+   "ai_sessions": 473,
+   "ai_cached_input_tokens": 774243041,
    "ai_model_breakdown": [
     {
      "name": "Sonnet",
      "lines": 0,
-     "cost": 341.345296
+     "cost": 343.893513
     },
     {
      "name": "Claude",
@@ -813,13 +337,13 @@
      "cost": 0.137766
     }
    ],
-   "ai_model_total_cost": 345.767578,
-   "percent": 2.21,
-   "digital": "135:02",
-   "decimal": "135.03",
-   "text": "135 hrs 2 mins",
+   "ai_model_total_cost": 348.315795,
+   "percent": 2.22,
+   "digital": "135:41",
+   "decimal": "135.68",
+   "text": "135 hrs 41 mins",
    "hours": 135,
-   "minutes": 2
+   "minutes": 41
   },
   {
    "total_seconds": 461637.652,
@@ -1103,7 +627,7 @@
    "ai_cached_input_tokens": 0,
    "ai_model_breakdown": [],
    "ai_model_total_cost": 0,
-   "percent": 0.7,
+   "percent": 0.69,
    "digital": "42:29",
    "decimal": "42.48",
    "text": "42 hrs 29 mins",
@@ -5387,201 +4911,6 @@
    "minutes": 0
   }
  ],
- "total_seconds": 20938294.452952,
- "percent_calculated": 100,
- "is_already_updating": false,
- "categories": [
-  {
-   "name": "Coding",
-   "total_seconds": 19281524.997127,
-   "percent": 87.62,
-   "digital": "5355:58",
-   "decimal": "5355.97",
-   "text": "5,355 hrs 58 mins",
-   "hours": 5355,
-   "minutes": 58
-  },
-  {
-   "name": "AI Coding",
-   "total_seconds": 1468912.5334,
-   "percent": 6.68,
-   "digital": "408:01",
-   "decimal": "408.02",
-   "text": "408 hrs 1 min",
-   "hours": 408,
-   "minutes": 1
-  },
-  {
-   "name": "Writing Tests",
-   "total_seconds": 585742.376604,
-   "percent": 2.66,
-   "digital": "162:42",
-   "decimal": "162.70",
-   "text": "162 hrs 42 mins",
-   "hours": 162,
-   "minutes": 42
-  },
-  {
-   "name": "Writing Docs",
-   "total_seconds": 507883.649376,
-   "percent": 2.31,
-   "digital": "141:04",
-   "decimal": "141.07",
-   "text": "141 hrs 4 mins",
-   "hours": 141,
-   "minutes": 4
-  },
-  {
-   "name": "Debugging",
-   "total_seconds": 154842.33232,
-   "percent": 0.7,
-   "digital": "43:00",
-   "decimal": "43.00",
-   "text": "43 hrs",
-   "hours": 43,
-   "minutes": 0
-  },
-  {
-   "name": "Meeting",
-   "total_seconds": 3499.535883,
-   "percent": 0.02,
-   "digital": "0:58",
-   "decimal": "0.97",
-   "text": "58 mins",
-   "hours": 0,
-   "minutes": 58
-  },
-  {
-   "name": "Building",
-   "total_seconds": 2810.654929,
-   "percent": 0.01,
-   "digital": "0:46",
-   "decimal": "0.77",
-   "text": "46 mins",
-   "hours": 0,
-   "minutes": 46
-  }
- ],
- "is_up_to_date_pending_future": false,
- "best_day": {
-  "date": "2026-10-27",
-  "total_seconds": 86399.0,
-  "text": "23 hrs 59 mins"
- },
- "is_up_to_date": true,
- "ai_model_breakdown": [
-  {
-   "name": "Opus",
-   "lines": 197482,
-   "cost": 4954.529332
-  },
-  {
-   "name": "Sonnet",
-   "lines": 8753,
-   "cost": 717.163492
-  },
-  {
-   "name": "Claude",
-   "lines": 7578,
-   "cost": 300.979758
-  },
-  {
-   "name": "Glm",
-   "lines": 6083,
-   "cost": 213.614619
-  },
-  {
-   "name": "Vscode",
-   "lines": 4218,
-   "cost": 0.0
-  },
-  {
-   "name": "Fable",
-   "lines": 897,
-   "cost": 96.772571
-  },
-  {
-   "name": "Claude-Code",
-   "lines": 0,
-   "cost": 21.97278
-  },
-  {
-   "name": "Qwen",
-   "lines": 0,
-   "cost": 1.634934
-  },
-  {
-   "name": "OpenCode",
-   "lines": 0,
-   "cost": 0.108702
-  }
- ],
- "human_readable_total": "5,816 hrs 11 mins",
- "daily_average": 22251.0,
- "daily_average_including_other_language": 23385.0,
- "operating_systems": [
-  {
-   "total_seconds": 11570743.406581,
-   "name": "Mac",
-   "ai_coding_seconds": "429833.855154",
-   "manual_coding_seconds": "10956411.160478",
-   "percent": 52.58,
-   "digital": "3214:05",
-   "decimal": "3214.08",
-   "text": "3,214 hrs 5 mins",
-   "hours": 3214,
-   "minutes": 5
-  },
-  {
-   "total_seconds": 6174701.987068,
-   "name": "Windows",
-   "ai_coding_seconds": "49319.796076",
-   "manual_coding_seconds": "5975968.464908",
-   "percent": 28.06,
-   "digital": "1715:11",
-   "decimal": "1715.18",
-   "text": "1,715 hrs 11 mins",
-   "hours": 1715,
-   "minutes": 11
-  },
-  {
-   "total_seconds": 4246816.894573,
-   "name": "Linux",
-   "ai_coding_seconds": "979242.274000",
-   "manual_coding_seconds": "3088704.419688",
-   "percent": 19.3,
-   "digital": "1179:40",
-   "decimal": "1179.67",
-   "text": "1,179 hrs 40 mins",
-   "hours": 1179,
-   "minutes": 40
-  },
-  {
-   "total_seconds": 11688.077417,
-   "name": "WSL",
-   "ai_coding_seconds": "9251.268170",
-   "manual_coding_seconds": "2433.485215",
-   "percent": 0.05,
-   "digital": "3:14",
-   "decimal": "3.23",
-   "text": "3 hrs 14 mins",
-   "hours": 3,
-   "minutes": 14
-  },
-  {
-   "total_seconds": 1265.34,
-   "name": "Unknown OS",
-   "ai_coding_seconds": "1265.340000",
-   "manual_coding_seconds": 0,
-   "percent": 0.01,
-   "digital": "0:21",
-   "decimal": "0.35",
-   "text": "21 mins",
-   "hours": 0,
-   "minutes": 21
-  }
- ],
- "human_readable_total_including_other_language": "6,112 hrs 33 mins",
  "dependencies": [
   {
    "total_seconds": 2479941.34955,
@@ -5744,14 +5073,14 @@
    "minutes": 50
   },
   {
-   "total_seconds": 641790.137592,
+   "total_seconds": 641850.115592,
    "name": "cstddef",
    "percent": 1.15,
-   "digital": "178:16",
-   "decimal": "178.27",
-   "text": "178 hrs 16 mins",
+   "digital": "178:17",
+   "decimal": "178.28",
+   "text": "178 hrs 17 mins",
    "hours": 178,
-   "minutes": 16
+   "minutes": 17
   },
   {
    "total_seconds": 619199.78373,
@@ -6104,14 +5433,14 @@
    "minutes": 35
   },
   {
-   "total_seconds": 275253.201957,
+   "total_seconds": 275313.179957,
    "name": "windows",
-   "percent": 0.49,
-   "digital": "76:27",
-   "decimal": "76.45",
-   "text": "76 hrs 27 mins",
+   "percent": 0.5,
+   "digital": "76:28",
+   "decimal": "76.47",
+   "text": "76 hrs 28 mins",
    "hours": 76,
-   "minutes": 27
+   "minutes": 28
   },
   {
    "total_seconds": 261716.396523,
@@ -6264,24 +5593,24 @@
    "minutes": 56
   },
   {
-   "total_seconds": 198446.554688,
+   "total_seconds": 198506.532688,
    "name": "sys",
    "percent": 0.36,
-   "digital": "55:07",
-   "decimal": "55.12",
-   "text": "55 hrs 7 mins",
+   "digital": "55:08",
+   "decimal": "55.13",
+   "text": "55 hrs 8 mins",
    "hours": 55,
-   "minutes": 7
+   "minutes": 8
   },
   {
-   "total_seconds": 197113.369203,
+   "total_seconds": 197173.347203,
    "name": "cstdlib",
    "percent": 0.35,
-   "digital": "54:45",
-   "decimal": "54.75",
-   "text": "54 hrs 45 mins",
+   "digital": "54:46",
+   "decimal": "54.77",
+   "text": "54 hrs 46 mins",
    "hours": 54,
-   "minutes": 45
+   "minutes": 46
   },
   {
    "total_seconds": 196223.383481,
@@ -9064,14 +8393,14 @@
    "minutes": 47
   },
   {
-   "total_seconds": 10003.748996,
+   "total_seconds": 10063.726996,
    "name": "malloc",
    "percent": 0.02,
-   "digital": "2:46",
-   "decimal": "2.77",
-   "text": "2 hrs 46 mins",
+   "digital": "2:47",
+   "decimal": "2.78",
+   "text": "2 hrs 47 mins",
    "hours": 2,
-   "minutes": 46
+   "minutes": 47
   },
   {
    "total_seconds": 9993.348774,
@@ -32654,19 +31983,543 @@
    "minutes": 0
   }
  ],
- "total_seconds_including_other_language": 22005215.705639,
+ "daily_average": 22229.0,
+ "human_readable_total": "5,816 hrs 36 mins",
+ "ai_model_breakdown": [
+  {
+   "name": "Opus",
+   "lines": 197482,
+   "cost": 4954.529332
+  },
+  {
+   "name": "Sonnet",
+   "lines": 8769,
+   "cost": 723.9163
+  },
+  {
+   "name": "Claude",
+   "lines": 7578,
+   "cost": 300.979758
+  },
+  {
+   "name": "Glm",
+   "lines": 6083,
+   "cost": 213.614619
+  },
+  {
+   "name": "Vscode",
+   "lines": 4218,
+   "cost": 0.0
+  },
+  {
+   "name": "Fable",
+   "lines": 897,
+   "cost": 96.772571
+  },
+  {
+   "name": "Claude-Code",
+   "lines": 0,
+   "cost": 21.97278
+  },
+  {
+   "name": "Qwen",
+   "lines": 0,
+   "cost": 1.634934
+  },
+  {
+   "name": "OpenCode",
+   "lines": 0,
+   "cost": 0.108702
+  }
+ ],
+ "daily_average_including_other_language": 23364.0,
+ "machines": [
+  {
+   "total_seconds": 6186390.064485,
+   "name": "Dhruvan-new-pc",
+   "machine_name_id": "018cb41a-b4a9-46c8-9e96-db198b2664e5",
+   "percent": 28.11,
+   "digital": "1718:26",
+   "decimal": "1718.43",
+   "text": "1,718 hrs 26 mins",
+   "hours": 1718,
+   "minutes": 26
+  },
+  {
+   "total_seconds": 3975820.036474,
+   "name": "gofy-ahh-chromebook.local",
+   "machine_name_id": "018afc95-3978-4d18-8d76-5848c7c8695b",
+   "percent": 18.06,
+   "digital": "1104:23",
+   "decimal": "1104.38",
+   "text": "1,104 hrs 23 mins",
+   "hours": 1104,
+   "minutes": 23
+  },
+  {
+   "total_seconds": 3489692.383574,
+   "name": "archlinux",
+   "machine_name_id": "6351752d-57ac-462c-9042-13e2d55a1a3d",
+   "percent": 15.86,
+   "digital": "969:21",
+   "decimal": "969.35",
+   "text": "969 hrs 21 mins",
+   "hours": 969,
+   "minutes": 21
+  },
+  {
+   "total_seconds": 2688859.872812,
+   "name": "mac.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "4c926113-b2ac-4f71-bf25-ce4b89dcaf43",
+   "percent": 12.22,
+   "digital": "746:54",
+   "decimal": "746.90",
+   "text": "746 hrs 54 mins",
+   "hours": 746,
+   "minutes": 54
+  },
+  {
+   "total_seconds": 1899446.718,
+   "name": "dhruvans-MacBook-Pro.local",
+   "machine_name_id": "db62cd50-f7c1-48b2-9810-3c6a7ffee546",
+   "percent": 8.63,
+   "digital": "527:37",
+   "decimal": "527.62",
+   "text": "527 hrs 37 mins",
+   "hours": 527,
+   "minutes": 37
+  },
+  {
+   "total_seconds": 1090760.717294,
+   "name": "gofyahhromebook.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "e645a163-4564-4941-9bec-901ddad811ed",
+   "percent": 4.96,
+   "digital": "302:59",
+   "decimal": "302.98",
+   "text": "302 hrs 59 mins",
+   "hours": 302,
+   "minutes": 59
+  },
+  {
+   "total_seconds": 651840.206,
+   "name": "dhcp-10-85-7-241",
+   "machine_name_id": "5283e871-98bf-4443-b58b-32c5d9a2e31a",
+   "percent": 2.96,
+   "digital": "181:04",
+   "decimal": "181.07",
+   "text": "181 hrs 4 mins",
+   "hours": 181,
+   "minutes": 4
+  },
+  {
+   "total_seconds": 412697.097427,
+   "name": "Mac.mshome.net",
+   "machine_name_id": "b3f335cd-4db3-4488-95b5-01b6c2d37f09",
+   "percent": 1.88,
+   "digital": "114:38",
+   "decimal": "114.63",
+   "text": "114 hrs 38 mins",
+   "hours": 114,
+   "minutes": 38
+  },
+  {
+   "total_seconds": 213795.214,
+   "name": "dhruvans-mbp.notrust.pfw.edu",
+   "machine_name_id": "b29ab063-cd2c-4303-a849-cef69ae40ba0",
+   "percent": 0.97,
+   "digital": "59:23",
+   "decimal": "59.38",
+   "text": "59 hrs 23 mins",
+   "hours": 59,
+   "minutes": 23
+  },
+  {
+   "total_seconds": 177257.744,
+   "name": "dhruvans-mbp.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "5d356561-a290-437a-8e4e-444618098082",
+   "percent": 0.81,
+   "digital": "49:14",
+   "decimal": "49.23",
+   "text": "49 hrs 14 mins",
+   "hours": 49,
+   "minutes": 14
+  },
+  {
+   "total_seconds": 163702.533,
+   "name": "dhcp-10-100-218-73.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "3bf2c4d2-dbde-4e0f-a2b3-156cd690b467",
+   "percent": 0.74,
+   "digital": "45:28",
+   "decimal": "45.47",
+   "text": "45 hrs 28 mins",
+   "hours": 45,
+   "minutes": 28
+  },
+  {
+   "total_seconds": 137776.546,
+   "name": "Mac",
+   "machine_name_id": "c575e75f-b329-4e26-835f-f8e03df5ca70",
+   "percent": 0.63,
+   "digital": "38:16",
+   "decimal": "38.27",
+   "text": "38 hrs 16 mins",
+   "hours": 38,
+   "minutes": 16
+  },
+  {
+   "total_seconds": 109113.605999,
+   "name": "diamond.pfw.edu",
+   "machine_name_id": "76f87d07-0dc1-402c-89ac-13ee4facc28f",
+   "percent": 0.5,
+   "digital": "30:18",
+   "decimal": "30.30",
+   "text": "30 hrs 18 mins",
+   "hours": 30,
+   "minutes": 18
+  },
+  {
+   "total_seconds": 106525.713826,
+   "name": "gofyahhromebook",
+   "machine_name_id": "c1937387-98fd-491a-b66d-a6261cf28f2f",
+   "percent": 0.48,
+   "digital": "29:35",
+   "decimal": "29.58",
+   "text": "29 hrs 35 mins",
+   "hours": 29,
+   "minutes": 35
+  },
+  {
+   "total_seconds": 101482.610322,
+   "name": "Mac.attlocal.net",
+   "machine_name_id": "b3f0c552-9ade-40c1-a633-cc78cdc65141",
+   "percent": 0.46,
+   "digital": "28:11",
+   "decimal": "28.18",
+   "text": "28 hrs 11 mins",
+   "hours": 28,
+   "minutes": 11
+  },
+  {
+   "total_seconds": 100079.962434,
+   "name": "mac.lan",
+   "machine_name_id": "9635b0fd-dfbd-4380-9e77-27ce1f60836a",
+   "percent": 0.45,
+   "digital": "27:47",
+   "decimal": "27.78",
+   "text": "27 hrs 47 mins",
+   "hours": 27,
+   "minutes": 47
+  },
+  {
+   "total_seconds": 62514.766,
+   "name": "dhcp-10-100-216-65.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "620d7ebd-2514-4ace-a264-881f1860cc37",
+   "percent": 0.28,
+   "digital": "17:21",
+   "decimal": "17.35",
+   "text": "17 hrs 21 mins",
+   "hours": 17,
+   "minutes": 21
+  },
+  {
+   "total_seconds": 55460.291,
+   "name": "Mac.lan",
+   "machine_name_id": "7067d8cb-fc9b-4a8a-8749-023275131c0c",
+   "percent": 0.25,
+   "digital": "15:24",
+   "decimal": "15.40",
+   "text": "15 hrs 24 mins",
+   "hours": 15,
+   "minutes": 24
+  },
+  {
+   "total_seconds": 53660.069,
+   "name": "dhcp-10-100-251-75.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "f8f82bd0-1ff2-49ae-bcf3-08435725675d",
+   "percent": 0.24,
+   "digital": "14:54",
+   "decimal": "14.90",
+   "text": "14 hrs 54 mins",
+   "hours": 14,
+   "minutes": 54
+  },
+  {
+   "total_seconds": 47893.341,
+   "name": "accioconnect.notrust.pfw.edu",
+   "machine_name_id": "0bd05025-a2f2-4f17-b387-9e696887d2ab",
+   "percent": 0.22,
+   "digital": "13:18",
+   "decimal": "13.30",
+   "text": "13 hrs 18 mins",
+   "hours": 13,
+   "minutes": 18
+  },
+  {
+   "total_seconds": 34908.949,
+   "name": "dhcp-10-100-242-180.notrust.pfw.edu",
+   "machine_name_id": "d0c4f496-18b1-43e9-b8ae-06851c6b86ad",
+   "percent": 0.16,
+   "digital": "9:41",
+   "decimal": "9.68",
+   "text": "9 hrs 41 mins",
+   "hours": 9,
+   "minutes": 41
+  },
+  {
+   "total_seconds": 34488.39,
+   "name": "dhcp-10-100-247-43.notrust.pfw.edu",
+   "machine_name_id": "606e404c-3867-49bc-a030-0bd8b01e0c84",
+   "percent": 0.16,
+   "digital": "9:34",
+   "decimal": "9.57",
+   "text": "9 hrs 34 mins",
+   "hours": 9,
+   "minutes": 34
+  },
+  {
+   "total_seconds": 29755.012,
+   "name": "dhcp-10-100-244-9.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "9fe26af3-b491-4d02-8253-9d24cff94d82",
+   "percent": 0.14,
+   "digital": "8:15",
+   "decimal": "8.25",
+   "text": "8 hrs 15 mins",
+   "hours": 8,
+   "minutes": 15
+  },
+  {
+   "total_seconds": 23094.441,
+   "name": "dhcp-10-100-192-202.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "b5dd286c-7917-442c-bc28-0d2f6ff3e38c",
+   "percent": 0.1,
+   "digital": "6:24",
+   "decimal": "6.40",
+   "text": "6 hrs 24 mins",
+   "hours": 6,
+   "minutes": 24
+  },
+  {
+   "total_seconds": 20962.318,
+   "name": "dhcp-10-100-244-30.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "fddb864b-eb41-4bcb-82c7-22470faa9a0c",
+   "percent": 0.1,
+   "digital": "5:49",
+   "decimal": "5.82",
+   "text": "5 hrs 49 mins",
+   "hours": 5,
+   "minutes": 49
+  },
+  {
+   "total_seconds": 17821.304841,
+   "name": "Mac-353.lan",
+   "machine_name_id": "0e4eb667-95c8-4240-b4b3-2a1b52823040",
+   "percent": 0.08,
+   "digital": "4:57",
+   "decimal": "4.95",
+   "text": "4 hrs 57 mins",
+   "hours": 4,
+   "minutes": 57
+  },
+  {
+   "total_seconds": 16448.278297,
+   "name": "gofyahhromebook.home",
+   "machine_name_id": "018bfe56-838e-4911-84a7-1a7c70c33ad1",
+   "percent": 0.07,
+   "digital": "4:34",
+   "decimal": "4.57",
+   "text": "4 hrs 34 mins",
+   "hours": 4,
+   "minutes": 34
+  },
+  {
+   "total_seconds": 15982.395721,
+   "name": "dhcp-10-100-248-245.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "257e1b3e-e686-40f8-ae06-6caf23289f9a",
+   "percent": 0.07,
+   "digital": "4:26",
+   "decimal": "4.43",
+   "text": "4 hrs 26 mins",
+   "hours": 4,
+   "minutes": 26
+  },
+  {
+   "total_seconds": 13991.805,
+   "name": "dhcp-10-100-247-186.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "cc538cf0-c193-421c-af68-5c6896272f5c",
+   "percent": 0.06,
+   "digital": "3:53",
+   "decimal": "3.88",
+   "text": "3 hrs 53 mins",
+   "hours": 3,
+   "minutes": 53
+  },
+  {
+   "total_seconds": 13593.723208,
+   "name": "dhcp-10-100-124-252.mab.clients.wireless.pfw.edu",
+   "machine_name_id": "dfad7f63-1bc9-4bc8-8af1-2aa31ce73acd",
+   "percent": 0.06,
+   "digital": "3:46",
+   "decimal": "3.77",
+   "text": "3 hrs 46 mins",
+   "hours": 3,
+   "minutes": 46
+  },
+  {
+   "total_seconds": 13567.479746,
+   "name": "unknown064cb3f3f2a1.attlocal.net",
+   "machine_name_id": "7e1a7336-5076-4f62-9801-28c588954fa4",
+   "percent": 0.06,
+   "digital": "3:46",
+   "decimal": "3.77",
+   "text": "3 hrs 46 mins",
+   "hours": 3,
+   "minutes": 46
+  },
+  {
+   "total_seconds": 10099.508179,
+   "name": "gofyahhromebook.wireless.pfw.edu",
+   "machine_name_id": "018af1d7-11f6-401b-a830-3d9241cc79b9",
+   "percent": 0.05,
+   "digital": "2:48",
+   "decimal": "2.80",
+   "text": "2 hrs 48 mins",
+   "hours": 2,
+   "minutes": 48
+  },
+  {
+   "total_seconds": 10098.643,
+   "name": "dhcp-10-100-209-209.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "2542608a-a3d3-48e0-b097-cba66de8b9e3",
+   "percent": 0.05,
+   "digital": "2:48",
+   "decimal": "2.80",
+   "text": "2 hrs 48 mins",
+   "hours": 2,
+   "minutes": 48
+  },
+  {
+   "total_seconds": 7028.364,
+   "name": "dhcp-10-100-246-140.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "7ca59f2a-099a-4252-9a2c-007d669530df",
+   "percent": 0.03,
+   "digital": "1:57",
+   "decimal": "1.95",
+   "text": "1 hr 57 mins",
+   "hours": 1,
+   "minutes": 57
+  },
+  {
+   "total_seconds": 5770.985,
+   "name": "Mac-240.lan",
+   "machine_name_id": "6d666d8f-7920-4d80-bc4a-b900db769145",
+   "percent": 0.03,
+   "digital": "1:36",
+   "decimal": "1.60",
+   "text": "1 hr 36 mins",
+   "hours": 1,
+   "minutes": 36
+  },
+  {
+   "total_seconds": 5358.047,
+   "name": "dhcp-10-100-244-92.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "93fa0b79-7743-49f2-ae84-e31e34ba14eb",
+   "percent": 0.02,
+   "digital": "1:29",
+   "decimal": "1.48",
+   "text": "1 hr 29 mins",
+   "hours": 1,
+   "minutes": 29
+  },
+  {
+   "total_seconds": 4815.938,
+   "name": "hnt-6538.apng.wlan.private.upenn.edu",
+   "machine_name_id": "548827cb-00e8-43ea-b171-38d360439494",
+   "percent": 0.02,
+   "digital": "1:20",
+   "decimal": "1.33",
+   "text": "1 hr 20 mins",
+   "hours": 1,
+   "minutes": 20
+  },
+  {
+   "total_seconds": 3500.405,
+   "name": "Mac-235.lan",
+   "machine_name_id": "cfae7e23-64fe-4df8-88ad-e43ee860a7cd",
+   "percent": 0.02,
+   "digital": "0:58",
+   "decimal": "0.97",
+   "text": "58 mins",
+   "hours": 0,
+   "minutes": 58
+  },
+  {
+   "total_seconds": 2760.768,
+   "name": "dhcp-10-100-218-71.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "b59a75eb-22d0-4adb-8738-4d56b68d6110",
+   "percent": 0.01,
+   "digital": "0:46",
+   "decimal": "0.77",
+   "text": "46 mins",
+   "hours": 0,
+   "minutes": 46
+  },
+  {
+   "total_seconds": 100.171,
+   "name": "dhcp-10-100-241-237.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "855851d2-5f4f-43f6-b9a8-942251b4eeb8",
+   "percent": 0.0,
+   "digital": "0:01",
+   "decimal": "0.02",
+   "text": "1 min",
+   "hours": 0,
+   "minutes": 1
+  },
+  {
+   "total_seconds": 57.532,
+   "name": "dhcp-10-100-239-172.notrust.pfw.edu",
+   "machine_name_id": "12f7f54c-d02a-4e39-95df-39460a5fbbdd",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 51.082,
+   "name": "dhcp-10-100-245-119.notrust.clients.wireless.pfw.edu",
+   "machine_name_id": "4827bdc7-ff6c-431d-b49f-b1e00af954b6",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  },
+  {
+   "total_seconds": 19.974,
+   "name": "Mac-48.lan",
+   "machine_name_id": "4c30db4a-a026-4ca0-b0ea-c18b8a4423e2",
+   "percent": 0.0,
+   "digital": "0:00",
+   "decimal": "0.00",
+   "text": "0 secs",
+   "hours": 0,
+   "minutes": 0
+  }
+ ],
  "languages": [
   {
    "name": "Kairo",
-   "total_seconds": 7043314.251714,
-   "ai_coding_seconds": "481519.277094",
-   "manual_coding_seconds": "6561794.974620",
+   "total_seconds": 7044768.698714,
+   "ai_coding_seconds": "482417.344094",
+   "manual_coding_seconds": "6562351.354620",
    "percent": 32.01,
-   "digital": "1956:28",
-   "decimal": "1956.47",
-   "text": "1,956 hrs 28 mins",
+   "digital": "1956:52",
+   "decimal": "1956.87",
+   "text": "1,956 hrs 52 mins",
    "hours": 1956,
-   "minutes": 28
+   "minutes": 52
   },
   {
    "name": "C++",
@@ -32694,15 +32547,15 @@
   },
   {
    "name": "Other",
-   "total_seconds": 1066921.252687,
-   "ai_coding_seconds": "554135.610737",
+   "total_seconds": 1069236.128687,
+   "ai_coding_seconds": "556450.486737",
    "manual_coding_seconds": "0.000000",
-   "percent": 4.85,
-   "digital": "296:22",
-   "decimal": "296.37",
-   "text": "296 hrs 22 mins",
-   "hours": 296,
-   "minutes": 22
+   "percent": 4.86,
+   "digital": "297:00",
+   "decimal": "297.00",
+   "text": "297 hrs",
+   "hours": 297,
+   "minutes": 0
   },
   {
    "name": "Markdown",
@@ -32730,15 +32583,15 @@
   },
   {
    "name": "C",
-   "total_seconds": 461946.208829,
-   "ai_coding_seconds": "1793.072435",
+   "total_seconds": 462006.186829,
+   "ai_coding_seconds": "1853.050435",
    "manual_coding_seconds": "460153.136394",
    "percent": 2.1,
-   "digital": "128:19",
-   "decimal": "128.32",
-   "text": "128 hrs 19 mins",
+   "digital": "128:20",
+   "decimal": "128.33",
+   "text": "128 hrs 20 mins",
    "hours": 128,
-   "minutes": 19
+   "minutes": 20
   },
   {
    "name": "MDX",
@@ -33749,16 +33602,80 @@
    "minutes": 0
   }
  ],
+ "total_seconds": 20939808.877952,
+ "operating_systems": [
+  {
+   "total_seconds": 11570743.406581,
+   "name": "Mac",
+   "ai_coding_seconds": "429833.855154",
+   "manual_coding_seconds": "10956411.160478",
+   "percent": 52.57,
+   "digital": "3214:05",
+   "decimal": "3214.08",
+   "text": "3,214 hrs 5 mins",
+   "hours": 3214,
+   "minutes": 5
+  },
+  {
+   "total_seconds": 6174701.987068,
+   "name": "Windows",
+   "ai_coding_seconds": "49319.796076",
+   "manual_coding_seconds": "5975968.464908",
+   "percent": 28.06,
+   "digital": "1715:11",
+   "decimal": "1715.18",
+   "text": "1,715 hrs 11 mins",
+   "hours": 1715,
+   "minutes": 11
+  },
+  {
+   "total_seconds": 4250646.195573,
+   "name": "Linux",
+   "ai_coding_seconds": "982515.195000",
+   "manual_coding_seconds": "3089260.799688",
+   "percent": 19.31,
+   "digital": "1180:44",
+   "decimal": "1180.73",
+   "text": "1,180 hrs 44 mins",
+   "hours": 1180,
+   "minutes": 44
+  },
+  {
+   "total_seconds": 11688.077417,
+   "name": "WSL",
+   "ai_coding_seconds": "9251.268170",
+   "manual_coding_seconds": "2433.485215",
+   "percent": 0.05,
+   "digital": "3:14",
+   "decimal": "3.23",
+   "text": "3 hrs 14 mins",
+   "hours": 3,
+   "minutes": 14
+  },
+  {
+   "total_seconds": 1265.34,
+   "name": "Unknown OS",
+   "ai_coding_seconds": "1265.340000",
+   "manual_coding_seconds": 0,
+   "percent": 0.01,
+   "digital": "0:21",
+   "decimal": "0.35",
+   "text": "21 mins",
+   "hours": 0,
+   "minutes": 21
+  }
+ ],
+ "is_stuck": false,
  "editors": [
   {
-   "total_seconds": 20904357.0161,
+   "total_seconds": 20905083.1741,
    "name": "VS Code",
-   "ai_coding_seconds": "420325.439814",
-   "manual_coding_seconds": "19982005.999397",
+   "ai_coding_seconds": "420495.217814",
+   "manual_coding_seconds": "19982562.379397",
    "ai_additions": 33782,
    "ai_deletions": 31209,
-   "human_additions": 8892725,
-   "human_deletions": 6799581,
+   "human_additions": 8892728,
+   "human_deletions": 6799699,
    "ai_model_line_changes": {
     "Vscode": 4218,
     "Claude": 4385,
@@ -33816,45 +33733,45 @@
     }
    ],
    "ai_model_total_cost": 393.275529,
-   "percent": 95.0,
-   "digital": "5806:45",
-   "decimal": "5806.75",
-   "text": "5,806 hrs 45 mins",
+   "percent": 94.98,
+   "digital": "5806:58",
+   "decimal": "5806.97",
+   "text": "5,806 hrs 58 mins",
    "hours": 5806,
-   "minutes": 45
+   "minutes": 58
   },
   {
-   "total_seconds": 1046336.84,
+   "total_seconds": 1049439.983,
    "name": "Claude Code",
-   "ai_coding_seconds": "1046336.840000",
+   "ai_coding_seconds": "1049439.983000",
    "manual_coding_seconds": 0,
-   "ai_additions": 201067,
-   "ai_deletions": 9240,
+   "ai_additions": 201081,
+   "ai_deletions": 9242,
    "human_additions": 0,
    "human_deletions": 0,
    "ai_model_line_changes": {
     "Claude": 3193,
     "Opus": 197482,
-    "Sonnet": 8753,
+    "Sonnet": 8769,
     "Fable": 879
    },
    "ai_model_costs": {
     "Claude": 144.036822,
     "Opus": 4954.529332,
-    "Sonnet": 717.163492,
+    "Sonnet": 723.9163,
     "Fable": 96.136079
    },
-   "ai_input_tokens": 777285992,
-   "ai_output_tokens": 33510139,
-   "ai_prompt_length_avg": 16382,
-   "ai_prompt_length_avg_per_session": 20762,
+   "ai_input_tokens": 777866986,
+   "ai_output_tokens": 33635840,
+   "ai_prompt_length_avg": 16323,
+   "ai_prompt_length_avg_per_session": 20645,
    "ai_prompt_length_median_per_session": 5449,
-   "ai_prompt_length_sum": 214839473,
-   "ai_prompt_events_total": 13114,
+   "ai_prompt_length_sum": 215475143,
+   "ai_prompt_events_total": 13201,
    "ai_prompt_events_avg_per_session": 19,
    "ai_prompt_events_median_per_session": 2,
-   "ai_sessions": 706,
-   "ai_cached_input_tokens": 8951030972,
+   "ai_sessions": 712,
+   "ai_cached_input_tokens": 8972700029,
    "ai_model_breakdown": [
     {
      "name": "Opus",
@@ -33863,8 +33780,8 @@
     },
     {
      "name": "Sonnet",
-     "lines": 8753,
-     "cost": 717.163492
+     "lines": 8769,
+     "cost": 723.9163
     },
     {
      "name": "Claude",
@@ -33877,13 +33794,13 @@
      "cost": 96.136079
     }
    ],
-   "ai_model_total_cost": 5911.865725,
-   "percent": 4.75,
-   "digital": "290:38",
-   "decimal": "290.63",
-   "text": "290 hrs 38 mins",
-   "hours": 290,
-   "minutes": 38
+   "ai_model_total_cost": 5918.618533,
+   "percent": 4.77,
+   "digital": "291:30",
+   "decimal": "291.50",
+   "text": "291 hrs 30 mins",
+   "hours": 291,
+   "minutes": 30
   },
   {
    "total_seconds": 42856.630417,
@@ -34136,6 +34053,89 @@
    "minutes": 0
   }
  ],
+ "is_up_to_date": true,
+ "is_already_updating": false,
+ "days_minus_holidays": 942,
+ "percent_calculated": 100,
+ "categories": [
+  {
+   "name": "Coding",
+   "total_seconds": 19282081.377127,
+   "percent": 87.61,
+   "digital": "5356:08",
+   "decimal": "5356.13",
+   "text": "5,356 hrs 8 mins",
+   "hours": 5356,
+   "minutes": 8
+  },
+  {
+   "name": "AI Coding",
+   "total_seconds": 1472185.4544,
+   "percent": 6.69,
+   "digital": "408:56",
+   "decimal": "408.93",
+   "text": "408 hrs 56 mins",
+   "hours": 408,
+   "minutes": 56
+  },
+  {
+   "name": "Writing Tests",
+   "total_seconds": 585742.376604,
+   "percent": 2.66,
+   "digital": "162:42",
+   "decimal": "162.70",
+   "text": "162 hrs 42 mins",
+   "hours": 162,
+   "minutes": 42
+  },
+  {
+   "name": "Writing Docs",
+   "total_seconds": 507883.649376,
+   "percent": 2.31,
+   "digital": "141:04",
+   "decimal": "141.07",
+   "text": "141 hrs 4 mins",
+   "hours": 141,
+   "minutes": 4
+  },
+  {
+   "name": "Debugging",
+   "total_seconds": 154842.33232,
+   "percent": 0.7,
+   "digital": "43:00",
+   "decimal": "43.00",
+   "text": "43 hrs",
+   "hours": 43,
+   "minutes": 0
+  },
+  {
+   "name": "Meeting",
+   "total_seconds": 3499.535883,
+   "percent": 0.02,
+   "digital": "0:58",
+   "decimal": "0.97",
+   "text": "58 mins",
+   "hours": 0,
+   "minutes": 58
+  },
+  {
+   "name": "Building",
+   "total_seconds": 2810.654929,
+   "percent": 0.01,
+   "digital": "0:46",
+   "decimal": "0.77",
+   "text": "46 mins",
+   "hours": 0,
+   "minutes": 46
+  }
+ ],
+ "best_day": {
+  "date": "2026-10-27",
+  "total_seconds": 86399.0,
+  "text": "23 hrs 59 mins"
+ },
+ "human_readable_total_including_other_language": "6,113 hrs 37 mins",
+ "total_seconds_including_other_language": 22009045.006639,
  "is_cached": true,
  "username": null,
  "is_including_today": false,
